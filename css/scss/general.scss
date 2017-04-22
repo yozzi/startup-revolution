@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+## General
+--------------------------------------------------------------*/
+
+a,
+button,
+input[type="submit"] {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+
+h1,
+.h1 {
+  font-size: 24px;
+}
+h2,
+.h2 {
+  font-size: 18px;
+}
+h3,
+.h3 {
+  font-size: 16px;
+}
+h4,
+.h4 {
+  font-size: 14px;
+}
+h5,
+.h5 {
+  font-size: 13px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+    .pull-left-lg {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .pull-right-md {
+        float: right;
+    }
+    .pull-left-md {
+        float: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .pull-right-sm {
+        float: right;
+    }
+    .pull-left-sm {
+        float: left;
+    }
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.hentry {
+    margin: 0;
+}
+
+.well {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.post-details{ overflow: hidden }
+// Responsive images
+.content img,
+.post-details img{ height: auto; max-width: 100%; }

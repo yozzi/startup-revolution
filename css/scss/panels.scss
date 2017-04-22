@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+## Panels
+--------------------------------------------------------------*/
+
+html.mm-opened {
+    overflow: auto !important; /* content jump fix */
+}
+
+.mm-menu {
+    background: #323232;
+}
+
+/* Hide mmenu flickering */
+#page #left-panel,
+#page #right-panel {
+    display: none;
+}
