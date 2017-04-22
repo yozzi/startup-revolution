@@ -110,7 +110,7 @@ get_header(); ?>
                     </div><!-- .entry-content -->
                 </div>
 	           <footer class="entry-footer">
-                   <?php startup_reloaded_entry_footer(); ?>
+                   <?php startup_revolution_entry_footer(); ?>
 	           </footer><!-- .entry-footer -->
             </article><!-- #post-## -->
         </div>

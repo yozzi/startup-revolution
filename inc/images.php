@@ -1,6 +1,6 @@
 <?php
 // Register custom imge sizes
-function startup_reloaded_custom_theme_features()  {
+function startup_revolution_custom_theme_features()  {
 
 	add_theme_support( 'post-thumbnails' );
 
@@ -18,10 +18,10 @@ function startup_reloaded_custom_theme_features()  {
     
 }
 
-add_action( 'after_setup_theme', 'startup_reloaded_custom_theme_features' );
+add_action( 'after_setup_theme', 'startup_revolution_custom_theme_features' );
 
 // Ajouter les tailles personnalisées au selecteur de l'uploadeur
-function startup_reloaded_insert_custom_sizes( $sizes ) {
+function startup_revolution_insert_custom_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'col-3-full' => __( '3 cols full', 'startup-revolution' ),
         'col-3-crop'  => __( '3 cols cropped', 'startup-revolution' ),
@@ -33,4 +33,4 @@ function startup_reloaded_insert_custom_sizes( $sizes ) {
     ) );
 }
 
-add_filter( 'image_size_names_choose', 'startup_reloaded_insert_custom_sizes' );
+add_filter( 'image_size_names_choose', 'startup_revolution_insert_custom_sizes' );

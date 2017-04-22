@@ -16,7 +16,7 @@ require get_template_directory() . '/inc/theme-options.php';
 
 		<?php while ( have_posts() ) : the_post();
             if ( is_plugin_active('startup-cpt-team/startup-cpt-team.php') ) {
-                $author  = get_post_meta( get_the_ID(), '_startup_reloaded_posts_author', true );
+                $author  = get_post_meta( get_the_ID(), '_startup_revolution_posts_author', true );
             }
             ?>
             <?php get_template_part( 'template-parts/title', 'single' ); ?>
@@ -49,7 +49,7 @@ require get_template_directory() . '/inc/theme-options.php';
                                         <?php if ( is_plugin_active('startup-cpt-team/startup-cpt-team.php') && $author ) {
                                             echo do_shortcode('[author id="'. $author .'"]');                                        
                                         } ?>
-                                      <?php startup_reloaded_entry_footer(); ?>
+                                      <?php startup_revolution_entry_footer(); ?>
                                     </div>
                                 </div>     
                             </footer><!-- .entry-footer -->

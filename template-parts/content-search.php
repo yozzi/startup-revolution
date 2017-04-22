@@ -14,7 +14,7 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php startup_reloaded_posted_on(); ?>
+			<?php startup_revolution_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -24,7 +24,7 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php startup_reloaded_entry_footer(); ?>
+		<?php startup_revolution_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 </div>

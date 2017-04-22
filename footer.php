@@ -39,7 +39,7 @@ require get_template_directory() . '/inc/theme-options.php';
                     <?php } ?> 
                       
                     <?php if ( current_user_can( 'manage_options' ) ) { ?>
-                        <a href="<?php echo admin_url() . "/theme-editor.php?file=" . startup_reloaded_get_current_template() . "&theme=" . get_template() ?>" class="btn btn-custom btn-xs"><?php echo startup_reloaded_get_current_template() ?></a>
+                        <a href="<?php echo admin_url() . "/theme-editor.php?file=" . startup_revolution_get_current_template() . "&theme=" . get_template() ?>" class="btn btn-custom btn-xs"><?php echo startup_revolution_get_current_template() ?></a>
                     <?php } ?> 
                         
                 <?php if ( current_user_can( 'edit_posts') || current_user_can( 'manage_options' )) { ?>

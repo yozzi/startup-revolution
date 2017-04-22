@@ -2,7 +2,7 @@
 /**
  * Enqueue scripts and styles.
  */
-function startup_reloaded_scripts() {
+function startup_revolution_scripts() {
     
     require get_template_directory() . '/inc/theme-options.php';
 
@@ -59,13 +59,13 @@ function startup_reloaded_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'startup_reloaded_scripts' );
+add_action( 'wp_enqueue_scripts', 'startup_revolution_scripts' );
 
 // Pour l'admin, mais a modifier, il faudrait plutot utiliser admin_enqueue_scripts
-function startup_reloaded_admin_enqueues() {
+function startup_revolution_admin_enqueues() {
   echo '<link rel="stylesheet" href="' . get_template_directory_uri() . '/lib/select2/css/select2.min.css' . '" type="text/css" media="all">';
   echo '<script type="text/javascript" src="' . get_template_directory_uri() . '/lib/select2/js/select2.min.js' . '"></script>';
   echo '<script type="text/javascript" src="' . get_template_directory_uri() . '/js/startup-admin.js' . '"></script>';
 }
-add_action('admin_head', 'startup_reloaded_admin_enqueues');
+add_action('admin_head', 'startup_revolution_admin_enqueues');
 ?>

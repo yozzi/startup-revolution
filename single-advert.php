@@ -42,7 +42,7 @@ require get_template_directory() . '/inc/theme-options.php';
                             <footer class="entry-footer">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                      <?php startup_reloaded_entry_footer(); ?>
+                                      <?php startup_revolution_entry_footer(); ?>
                                     </div>
                                 </div>     
                             </footer><!-- .entry-footer -->

@@ -1,9 +1,9 @@
 <?php
 require get_template_directory() . '/lib/class-tgm-plugin-activation.php';
  
-add_action( 'tgmpa_register', 'startup_reloaded_register_required_plugins' );
+add_action( 'tgmpa_register', 'startup_revolution_register_required_plugins' );
 
-function startup_reloaded_register_required_plugins() {
+function startup_revolution_register_required_plugins() {
     $plugins = array(
         
         /*******************************************************************

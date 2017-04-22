@@ -7,7 +7,7 @@
 //Include this to check if a plugin is activated with is_plugin_active
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
-if ( ! function_exists( 'startup_reloaded_setup' ) ) :
+if ( ! function_exists( 'startup_revolution_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,7 +15,7 @@ if ( ! function_exists( 'startup_reloaded_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function startup_reloaded_setup() {
+function startup_revolution_setup() {
 
 	/*
 	 * Make theme available for translation.
@@ -71,13 +71,13 @@ function startup_reloaded_setup() {
 //	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'startup_reloaded_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'startup_revolution_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-endif; // startup_reloaded_setup
-add_action( 'after_setup_theme', 'startup_reloaded_setup' );
+endif; // startup_revolution_setup
+add_action( 'after_setup_theme', 'startup_revolution_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -86,10 +86,10 @@ add_action( 'after_setup_theme', 'startup_reloaded_setup' );
  *
  * @global int $content_width
  */
-function startup_reloaded_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'startup_reloaded_content_width', 640 );
+function startup_revolution_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'startup_revolution_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'startup_reloaded_content_width', 0 );
+add_action( 'after_setup_theme', 'startup_revolution_content_width', 0 );
 
 /**
  * Register widget area.
@@ -175,9 +175,9 @@ require get_template_directory() . '/inc/plugins.php';
  *
  */
 
-add_filter('options_framework_location','startup_reloaded_options_framework_location_override');
+add_filter('options_framework_location','startup_revolution_options_framework_location_override');
 
-function startup_reloaded_options_framework_location_override() {
+function startup_revolution_options_framework_location_override() {
 	return array('/inc/options.php');
 }
 
@@ -253,7 +253,7 @@ function wp_get_image_id($image_url) {
 //Adverts
 if (is_plugin_active('wpadverts/wpadverts.php')){
     // Ajouter CPF aux annonces
-    function startup_reloaded_add_adverts_currency($list) {
+    function startup_revolution_add_adverts_currency($list) {
         $list[] = array(
             "code"=>"XPF", // ISO 4217 currency code, see http://en.wikipedia.org/wiki/ISO_4217
             "sign"=>"CFP", // currency prefix or postfix
@@ -262,10 +262,10 @@ if (is_plugin_active('wpadverts/wpadverts.php')){
         return $list;
     }
 
-    add_filter("adverts_currency_list", "startup_reloaded_add_adverts_currency");
+    add_filter("adverts_currency_list", "startup_revolution_add_adverts_currency");
 
     // Limiter les annonces à une seule catégorie
-    function startup_reloaded_limit_category_selection( $form ) {
+    function startup_revolution_limit_category_selection( $form ) {
         if($form["name"] != 'advert' || is_admin()) {
             return $form;
         }
@@ -278,38 +278,38 @@ if (is_plugin_active('wpadverts/wpadverts.php')){
         return $form;
     }
 
-    add_filter("adverts_form_load", "startup_reloaded_limit_category_selection");
+    add_filter("adverts_form_load", "startup_revolution_limit_category_selection");
 }
 
 // Page slug priority over archive
-function startup_reloaded_page_priority_init() {
+function startup_revolution_page_priority_init() {
     $GLOBALS['wp_rewrite']->use_verbose_page_rules = true;
 }
 
-add_action( 'init', 'startup_reloaded_page_priority_init' );
+add_action( 'init', 'startup_revolution_page_priority_init' );
 
-function startup_reloaded_page_priority_collect_page_rewrite_rules( $page_rewrite_rules )
+function startup_revolution_page_priority_collect_page_rewrite_rules( $page_rewrite_rules )
 {
-    $GLOBALS['startup_reloaded_page_priority_page_rewrite_rules'] = $page_rewrite_rules;
+    $GLOBALS['startup_revolution_page_priority_page_rewrite_rules'] = $page_rewrite_rules;
     return array();
 }
 
-add_filter( 'page_rewrite_rules', 'startup_reloaded_page_priority_collect_page_rewrite_rules' );
+add_filter( 'page_rewrite_rules', 'startup_revolution_page_priority_collect_page_rewrite_rules' );
 
-function startup_reloaded_page_priority_prepend_page_rewrite_rules( $rewrite_rules )
+function startup_revolution_page_priority_prepend_page_rewrite_rules( $rewrite_rules )
 {
-    return $GLOBALS['startup_reloaded_page_priority_page_rewrite_rules'] + $rewrite_rules;
+    return $GLOBALS['startup_revolution_page_priority_page_rewrite_rules'] + $rewrite_rules;
 }
 
-add_filter( 'rewrite_rules_array', 'startup_reloaded_page_priority_prepend_page_rewrite_rules' );
+add_filter( 'rewrite_rules_array', 'startup_revolution_page_priority_prepend_page_rewrite_rules' );
 
 // Style de Tiny MCE
-function startup_reloaded_editor_styles() {
+function startup_revolution_editor_styles() {
     add_editor_style();
     //add_editor_style( 'custom-editor-style.css' );
 }
 
-add_action( 'admin_init', 'startup_reloaded_editor_styles' );
+add_action( 'admin_init', 'startup_revolution_editor_styles' );
 
 // Disable smart quotes
 //add_filter( 'run_wptexturize', '__return_false' );
@@ -317,15 +317,15 @@ add_action( 'admin_init', 'startup_reloaded_editor_styles' );
 // Show current template file for dev purpose
 //
 // Usage:
-// startup_reloaded_get_current_template()
-function startup_reloaded_define_current_template( $template ) {
+// startup_revolution_get_current_template()
+function startup_revolution_define_current_template( $template ) {
     $GLOBALS['current_theme_template'] = basename($template);
 
     return $template;
 }
-add_action('template_include', 'startup_reloaded_define_current_template', 1000);
+add_action('template_include', 'startup_revolution_define_current_template', 1000);
 
-function startup_reloaded_get_current_template( $echo = false ) {
+function startup_revolution_get_current_template( $echo = false ) {
     if ( !isset( $GLOBALS['current_theme_template'] ) ) {
         trigger_error( '$current_theme_template has not been defined yet', E_USER_WARNING );
         return false;

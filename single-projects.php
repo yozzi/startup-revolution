@@ -11,22 +11,22 @@ get_header(); ?>
 		<main id="main" class="row site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post();
-            $thumbnail  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_thumbnail', true );                    
-            $short  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_short', true );
-            $type  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_type', true );                    
-            $status  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_status', true );
-            $main_pic  = wp_get_attachment_image( get_post_meta( get_the_ID(), '_startup_reloaded_projects_main_pic_id', 1 ), 'large' );      
-            $description  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_description', true );
-            $specifications  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_specifications', true );                    
-            $options  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_options', true );
-            $warranty  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_warranty', true );                    
-            $price  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_price', true );
-            $gmap  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_gmap', true );
-            $zoom  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_zoom', true );
-            $implantation  = wp_get_attachment_image( get_post_meta( get_the_ID(), '_startup_reloaded_projects_implantation_id', 1 ), 'large' );
-            $plans  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_plans', true );
-            $gallery  = get_post_meta( get_the_ID(), '_startup_reloaded_projects_gallery', true );
-            $url   = get_post_meta( get_the_ID(), '_startup_reloaded_projects_url', true );
+            $thumbnail  = get_post_meta( get_the_ID(), '_startup_revolution_projects_thumbnail', true );                    
+            $short  = get_post_meta( get_the_ID(), '_startup_revolution_projects_short', true );
+            $type  = get_post_meta( get_the_ID(), '_startup_revolution_projects_type', true );                    
+            $status  = get_post_meta( get_the_ID(), '_startup_revolution_projects_status', true );
+            $main_pic  = wp_get_attachment_image( get_post_meta( get_the_ID(), '_startup_revolution_projects_main_pic_id', 1 ), 'large' );      
+            $description  = get_post_meta( get_the_ID(), '_startup_revolution_projects_description', true );
+            $specifications  = get_post_meta( get_the_ID(), '_startup_revolution_projects_specifications', true );                    
+            $options  = get_post_meta( get_the_ID(), '_startup_revolution_projects_options', true );
+            $warranty  = get_post_meta( get_the_ID(), '_startup_revolution_projects_warranty', true );                    
+            $price  = get_post_meta( get_the_ID(), '_startup_revolution_projects_price', true );
+            $gmap  = get_post_meta( get_the_ID(), '_startup_revolution_projects_gmap', true );
+            $zoom  = get_post_meta( get_the_ID(), '_startup_revolution_projects_zoom', true );
+            $implantation  = wp_get_attachment_image( get_post_meta( get_the_ID(), '_startup_revolution_projects_implantation_id', 1 ), 'large' );
+            $plans  = get_post_meta( get_the_ID(), '_startup_revolution_projects_plans', true );
+            $gallery  = get_post_meta( get_the_ID(), '_startup_revolution_projects_gallery', true );
+            $url   = get_post_meta( get_the_ID(), '_startup_revolution_projects_url', true );
         ?>
             
         <div class="col-lg-12">
@@ -82,7 +82,7 @@ get_header(); ?>
                     
                     <?php if ( $gmap ) { ?>
                         <h5>Localisation</h5>
-                        <?php $mapGPS = get_post_meta( get_the_ID(), '_startup_reloaded_projects_gmap', true ); ?>
+                        <?php $mapGPS = get_post_meta( get_the_ID(), '_startup_revolution_projects_gmap', true ); ?>
                         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
                         <div id="gmap_canvas" style="height:500px;width:100%;"></div>
                         <script type="text/javascript">
@@ -129,7 +129,7 @@ get_header(); ?>
                 </div><!-- .entry-content -->
 
 	           <footer class="entry-footer">
-                   <?php startup_reloaded_entry_footer(); ?>
+                   <?php startup_revolution_entry_footer(); ?>
 	           </footer><!-- .entry-footer -->
             </article><!-- #post-## -->
         </div>

@@ -60,7 +60,7 @@
                     $categories = get_the_terms( $post->ID, 'category' );
                     $image = get_the_post_thumbnail($post->ID, 'col-3-square');
                     $format = get_post_format($post->ID);
-                    $link = get_post_meta( $post->ID, '_startup_reloaded_posts_link_url', true );
+                    $link = get_post_meta( $post->ID, '_startup_revolution_posts_link_url', true );
                     if ( $format == 'image' ) {
                         $icon = 'camera';
                     } else if ( $format == 'audio' ) {

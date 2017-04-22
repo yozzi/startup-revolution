@@ -1,10 +1,10 @@
 <?php 
 // Metaboxes
-add_action( 'cmb2_admin_init', 'startup_reloaded_metabox_pages' );
+add_action( 'cmb2_admin_init', 'startup_revolution_metabox_pages' );
 
-function startup_reloaded_metabox_pages() {
+function startup_revolution_metabox_pages() {
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_startup_reloaded_pages_';
+	$prefix = '_startup_revolution_pages_';
 
 	$cmb_box = new_cmb2_box( array(
 		'id'            => $prefix . 'metabox',
@@ -123,11 +123,11 @@ function startup_reloaded_metabox_pages() {
 	) );
 }
 
-add_action( 'cmb2_admin_init', 'startup_reloaded_metabox_posts' );
+add_action( 'cmb2_admin_init', 'startup_revolution_metabox_posts' );
 
-function startup_reloaded_metabox_posts() {
+function startup_revolution_metabox_posts() {
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_startup_reloaded_posts_';
+	$prefix = '_startup_revolution_posts_';
     
     if ( is_plugin_active('startup-cpt-team/startup-cpt-team.php') ) {
     
