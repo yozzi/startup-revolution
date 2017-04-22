@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 get_header();
@@ -35,7 +35,7 @@ require get_template_directory() . '/inc/theme-options.php';
                                         <?php the_content(); ?>
                                         <?php
                                             wp_link_pages( array(
-                                                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'startup-reloaded' ),
+                                                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'startup-revolution' ),
                                                 'after'  => '</div>',
                                             ) );
                                         ?>

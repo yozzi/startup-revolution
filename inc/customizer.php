@@ -1,8 +1,8 @@
 <?php
 /**
- * StartUp Reloaded Theme Customizer
+ * StartUp Revolution Theme Customizer
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 /**

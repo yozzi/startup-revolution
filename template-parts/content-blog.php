@@ -11,7 +11,7 @@
     <?php if (is_front_page()) { ?><div class="container"><?php } ?>
         <?php if ( $blog_style == 'shuffle' && $blog_filter == 'buttons' ) { ?>
             <ul id="filter" class="nav nav-pills">
-                <li><a class="active" href="#" data-group="all"><?php _e( 'All', 'startup-reloaded' ) ?></a></li>
+                <li><a class="active" href="#" data-group="all"><?php _e( 'All', 'startup-revolution' ) ?></a></li>
                 <?php 
                     $args = array( 'hide_empty' => 0 );
                     $myterms = get_terms( 'category', $args );
@@ -29,11 +29,11 @@
 
         <div class="dropdown">
           <button class="btn btn-custom dropdown-toggle" type="button" id="filter-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            <?php _e( 'Filter', 'startup-reloaded' ) ?>
+            <?php _e( 'Filter', 'startup-revolution' ) ?>
             <span class="caret"></span>
           </button>
           <ul id="filter" class="dropdown-menu" aria-labelledby="filter-btn">
-            <li><a class="active" href="#" data-group="all"><?php _e( 'All', 'startup-reloaded' ) ?></a></li>
+            <li><a class="active" href="#" data-group="all"><?php _e( 'All', 'startup-revolution' ) ?></a></li>
             <?php 
                 $args = array( 'hide_empty' => 0 );
                 $myterms = get_terms( 'category', $args );
@@ -91,7 +91,7 @@
                                     $content = $post->post_content;
                                 } ?>
                                 <p><?php echo $content ?></p>
-                                    <a href="<?php echo get_permalink( $post->ID ) ?>" class="btn btn-custom btn-sm btn-block" role="button" target="_blank"><?php _e( 'Lire la suite', 'startup-reloaded' ) ?></a>
+                                    <a href="<?php echo get_permalink( $post->ID ) ?>" class="btn btn-custom btn-sm btn-block" role="button" target="_blank"><?php _e( 'Lire la suite', 'startup-revolution' ) ?></a>
                             </div>        
                         </div>
                     </div>

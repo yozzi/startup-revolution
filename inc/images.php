@@ -23,13 +23,13 @@ add_action( 'after_setup_theme', 'startup_reloaded_custom_theme_features' );
 // Ajouter les tailles personnalisées au selecteur de l'uploadeur
 function startup_reloaded_insert_custom_sizes( $sizes ) {
     return array_merge( $sizes, array(
-        'col-3-full' => __( '3 cols full', 'startup-reloaded' ),
-        'col-3-crop'  => __( '3 cols cropped', 'startup-reloaded' ),
-        'col-3-square'    => __( '3 cols square', 'startup-reloaded' ),
-        'col-8-full'     => __( '8 cols full', 'startup-reloaded' ),
-        'col-2-full'      => __( '2 cols full', 'startup-reloaded' ),
-        'col-12-crop'        => __( '12 cols cropped', 'startup-reloaded' ),
-        'col-12-full'        => __( '12 cols full', 'startup-reloaded' ),
+        'col-3-full' => __( '3 cols full', 'startup-revolution' ),
+        'col-3-crop'  => __( '3 cols cropped', 'startup-revolution' ),
+        'col-3-square'    => __( '3 cols square', 'startup-revolution' ),
+        'col-8-full'     => __( '8 cols full', 'startup-revolution' ),
+        'col-2-full'      => __( '2 cols full', 'startup-revolution' ),
+        'col-12-crop'        => __( '12 cols cropped', 'startup-revolution' ),
+        'col-12-full'        => __( '12 cols full', 'startup-revolution' ),
     ) );
 }
 

@@ -1,7 +1,7 @@
 <?php
 function optionsframework_option_name() {
 	// Change this to use your theme slug
-	return 'startup-reloaded';
+	return 'startup-revolution';
 }
 
 function optionsframework_options() {
@@ -14,19 +14,19 @@ function optionsframework_options() {
     //*****************************************************************************
     
     $options[] = array(
-		'name' => __( 'General', 'startup-reloaded' ),
+		'name' => __( 'General', 'startup-revolution' ),
 		'type' => 'heading'
 	);
     
     $options[] = array(
-		'name' => __( 'StartUp serial number', 'startup-reloaded' ),
+		'name' => __( 'StartUp serial number', 'startup-revolution' ),
 		'id' => 'general-serial',
 		'std' => '',
 		'type' => 'text'
 	);
     
     $options[] = array(
-		'name' => __( 'Image Logo', 'startup-reloaded' ),
+		'name' => __( 'Image Logo', 'startup-revolution' ),
 		'id' => 'general-logo',
 		'type' => 'upload'
 	);
@@ -34,14 +34,14 @@ function optionsframework_options() {
     // Pull all the pages into an array
 	$options_pages = array();
 	$options_pages_obj = get_pages( 'sort_column=post_parent,menu_order' );
-	$options_pages[''] = __( 'None', 'startup-reloaded' );
+	$options_pages[''] = __( 'None', 'startup-revolution' );
 	foreach ($options_pages_obj as $page) {
 		$options_pages[$page->ID] = $page->post_title;
 	}
     
     $options[] = array(
-		'name' => __( 'Header', 'startup-reloaded' ),
-		'desc' => __( 'Choose a page to use as site header', 'startup-reloaded' ),
+		'name' => __( 'Header', 'startup-revolution' ),
+		'desc' => __( 'Choose a page to use as site header', 'startup-revolution' ),
 		'id' => 'general-header',
 		'type' => 'select',
         'class' => 'mini', //mini, tiny, small
@@ -49,31 +49,31 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-		'name' => __( 'Layout', 'startup-reloaded' ),
+		'name' => __( 'Layout', 'startup-revolution' ),
 		'type' => 'info'
 	);
     
 	$options[] = array(
-		'desc' => __( 'Responsive', 'startup-reloaded' ),
+		'desc' => __( 'Responsive', 'startup-revolution' ),
 		'id' => 'general-responsive',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
     
 	$options[] = array(
-		'desc' => __( 'Boxed', 'startup-reloaded' ),
+		'desc' => __( 'Boxed', 'startup-revolution' ),
 		'id' => 'general-boxed',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
 	$home_page_type = array(
-		'default' => __( 'Default', 'startup-reloaded' ),
-		'login' => __( 'Login', 'startup-reloaded' ),
+		'default' => __( 'Default', 'startup-revolution' ),
+		'login' => __( 'Login', 'startup-revolution' ),
 	);
     
 	$options[] = array(
-		'name' => __( 'Front page', 'startup-reloaded' ),
+		'name' => __( 'Front page', 'startup-revolution' ),
 		'id' => 'front-page',
 		'std' => 'default',
 		'type' => 'select',
@@ -82,36 +82,36 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-		'name' => __( 'Page transitions', 'startup-reloaded' ),
-        'desc' => __( 'Activate', 'startup-reloaded' ),
+		'name' => __( 'Page transitions', 'startup-revolution' ),
+        'desc' => __( 'Activate', 'startup-revolution' ),
 		'id' => 'page-transition',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
     
 	$general_page_transitions = array(
-		'fade-in' => __( 'Fade in', 'startup-reloaded' ),
-		'fade-out' => __( 'Fade out', 'startup-reloaded' ),
-        'fade-in-up' => __( 'Fade in up', 'startup-reloaded' ),
-		'fade-out-up' => __( 'Fade out up', 'startup-reloaded' ),
-        'fade-in-down' => __( 'Fade in down', 'startup-reloaded' ),
-		'fade-out-down' => __( 'Fade out down', 'startup-reloaded' ),
-        'fade-in-left' => __( 'Fade in left', 'startup-reloaded' ),
-		'fade-out-left' => __( 'Fade out left', 'startup-reloaded' ),
-        'fade-in-right' => __( 'Fade in right', 'startup-reloaded' ),
-		'fade-out-right' => __( 'Fade out right', 'startup-reloaded' ),
-        'rotate-in' => __( 'Rotate in', 'startup-reloaded' ),
-		'rotate-out' => __( 'Rotate out', 'startup-reloaded' ),
-        'flip-in-x' => __( 'Flip in X', 'startup-reloaded' ),
-		'flip-out-x' => __( 'Flip out X', 'startup-reloaded' ),
-        'flip-in-y' => __( 'Flip in Y', 'startup-reloaded' ),
-		'flip-out-y' => __( 'Flip out Y', 'startup-reloaded' ),
-        'zoom-in' => __( 'Zoom in', 'startup-reloaded' ),
-		'zoom-out' => __( 'Zoom out', 'startup-reloaded' ),
+		'fade-in' => __( 'Fade in', 'startup-revolution' ),
+		'fade-out' => __( 'Fade out', 'startup-revolution' ),
+        'fade-in-up' => __( 'Fade in up', 'startup-revolution' ),
+		'fade-out-up' => __( 'Fade out up', 'startup-revolution' ),
+        'fade-in-down' => __( 'Fade in down', 'startup-revolution' ),
+		'fade-out-down' => __( 'Fade out down', 'startup-revolution' ),
+        'fade-in-left' => __( 'Fade in left', 'startup-revolution' ),
+		'fade-out-left' => __( 'Fade out left', 'startup-revolution' ),
+        'fade-in-right' => __( 'Fade in right', 'startup-revolution' ),
+		'fade-out-right' => __( 'Fade out right', 'startup-revolution' ),
+        'rotate-in' => __( 'Rotate in', 'startup-revolution' ),
+		'rotate-out' => __( 'Rotate out', 'startup-revolution' ),
+        'flip-in-x' => __( 'Flip in X', 'startup-revolution' ),
+		'flip-out-x' => __( 'Flip out X', 'startup-revolution' ),
+        'flip-in-y' => __( 'Flip in Y', 'startup-revolution' ),
+		'flip-out-y' => __( 'Flip out Y', 'startup-revolution' ),
+        'zoom-in' => __( 'Zoom in', 'startup-revolution' ),
+		'zoom-out' => __( 'Zoom out', 'startup-revolution' ),
 	);
     
 	$options[] = array(
-		'desc' => __( 'Transition in', 'startup-reloaded' ),
+		'desc' => __( 'Transition in', 'startup-revolution' ),
 		'id' => 'page-transition-in',
 		'std' => 'fade-in',
 		'type' => 'select',
@@ -120,7 +120,7 @@ function optionsframework_options() {
 	);
     
     $options[] = array(
-		'desc' => __( 'Transition out', 'startup-reloaded' ),
+		'desc' => __( 'Transition out', 'startup-revolution' ),
 		'id' => 'page-transition-out',
 		'std' => 'fade-out',
 		'type' => 'select',
@@ -129,48 +129,48 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-		'name' => __( 'Options', 'startup-reloaded' ),
+		'name' => __( 'Options', 'startup-revolution' ),
 		'type' => 'info'
 	);
     
 	$options[] = array(
-		'desc' => __( 'Back to top button', 'startup-reloaded' ),
+		'desc' => __( 'Back to top button', 'startup-revolution' ),
 		'id' => 'general-back-to-top',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-		'desc' => __( 'Activate FastClick', 'startup-reloaded' ),
+		'desc' => __( 'Activate FastClick', 'startup-revolution' ),
 		'id' => 'general-fastclick',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
     
 	$options[] = array(
-		'desc' => __( 'Activate YTPlayer', 'startup-reloaded' ),
+		'desc' => __( 'Activate YTPlayer', 'startup-revolution' ),
 		'id' => 'general-ytplayer',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-		'desc' => __( 'Activate SmoothScroll', 'startup-reloaded' ),
+		'desc' => __( 'Activate SmoothScroll', 'startup-revolution' ),
 		'id' => 'general-smoothscroll',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-		'name' => __( 'Footer content', 'startup-reloaded' ),
+		'name' => __( 'Footer content', 'startup-revolution' ),
 		'id' => 'general-footer',
 		'std' => 'Website powered with Startup by <a href="http://yozz.net" target="_blank">yozz.net</a>',
 		'type' => 'textarea'
 	);
     
     $options[] = array(
-		'name' => __( 'Google Analytics ID', 'startup-reloaded' ),
-		'desc' => __( 'Provided by Google in the form UA-XXXXXXX-XX', 'startup-reloaded' ),
+		'name' => __( 'Google Analytics ID', 'startup-revolution' ),
+		'desc' => __( 'Provided by Google in the form UA-XXXXXXX-XX', 'startup-revolution' ),
 		'id' => 'general-ga',
 		'std' => '',
 		'type' => 'text'
@@ -185,7 +185,7 @@ function optionsframework_options() {
     //*****************************************************************************
     
     $options[] = array(
-		'name' => __( 'Style', 'startup-reloaded' ),
+		'name' => __( 'Style', 'startup-revolution' ),
 		'type' => 'heading'
 	);
     
@@ -234,31 +234,31 @@ function optionsframework_options() {
 		'attachment'=>'scroll' );
     
     $options[] = array(
-		'name' =>  __( 'Background', 'startup-reloaded' ),
-		'desc' => __( 'Change the background CSS.', 'startup-reloaded' ),
+		'name' =>  __( 'Background', 'startup-revolution' ),
+		'desc' => __( 'Change the background CSS.', 'startup-revolution' ),
 		'id' => 'style-background',
 		'std' => $background_defaults,
 		'type' => 'background'
 	);
     
 	$options[] = array(
-		'name' => __( '', 'startup-reloaded' ),
-        'desc' => __( 'Cover', 'startup-reloaded' ),
+		'name' => __( '', 'startup-revolution' ),
+        'desc' => __( 'Cover', 'startup-revolution' ),
 		'id' => 'style-cover',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'name' => __( 'Page background', 'startup-reloaded' ),
+        'name' => __( 'Page background', 'startup-revolution' ),
 		'id' => 'style-page',
 		'std' => '',
 		'type' => 'color'
 	);
     
     $options[] = array(
-		'name' => __( 'Custom button', 'startup-reloaded' ),
-        'desc' => __( 'Corner radius in px', 'startup-reloaded' ),
+		'name' => __( 'Custom button', 'startup-revolution' ),
+        'desc' => __( 'Corner radius in px', 'startup-revolution' ),
 		'id' => 'button-radius',
 		'std' => '6',
 		'type' => 'text',
@@ -266,64 +266,64 @@ function optionsframework_options() {
 	);
     
     $options[] = array(
-        'desc' => __( 'Background', 'startup-reloaded' ),
+        'desc' => __( 'Background', 'startup-revolution' ),
 		'id' => 'button-background',
 		'std' => '#323232',
 		'type' => 'color'
 	);
     
     $options[] = array(
-        'desc' => __( 'Text', 'startup-reloaded' ),
+        'desc' => __( 'Text', 'startup-revolution' ),
 		'id' => 'button-text',
 		'std' => '#ffffff',
 		'type' => 'color'
 	);
     
     $options[] = array(
-        'desc' => __( 'Hover, focus, active background', 'startup-reloaded' ),
+        'desc' => __( 'Hover, focus, active background', 'startup-revolution' ),
 		'id' => 'button-hover-background',
 		'std' => '#000000',
 		'type' => 'color'
 	);
     
     $options[] = array(
-        'desc' => __( 'Hover, focus, active text', 'startup-reloaded' ),
+        'desc' => __( 'Hover, focus, active text', 'startup-revolution' ),
 		'id' => 'button-hover-text',
 		'std' => '#ffffff',
 		'type' => 'color'
 	);
     
 	$options[] = array(
-		'name' => __( 'Pages & posts header', 'startup-reloaded' ),
-        'desc' => __( 'Hide the header. Or not. Overrides individual page setting if ckecked.', 'startup-reloaded' ),
+		'name' => __( 'Pages & posts header', 'startup-revolution' ),
+        'desc' => __( 'Hide the header. Or not. Overrides individual page setting if ckecked.', 'startup-revolution' ),
 		'id' => 'page-header-hidden',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'desc' => __( 'Boxed width.', 'startup-reloaded' ),
+        'desc' => __( 'Boxed width.', 'startup-revolution' ),
 		'id' => 'page-header-boxed-width',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-		'desc' => __( 'Background', 'startup-reloaded' ),
+		'desc' => __( 'Background', 'startup-revolution' ),
 		'id' => 'page-header-background-color',
 		'std' => '#323232',
 		'type' => 'color'
 	);
     
     $options[] = array(
-		'desc' => __( 'Text', 'startup-reloaded' ),
+		'desc' => __( 'Text', 'startup-revolution' ),
 		'id' => 'page-header-text-color',
 		'std' => '#ffffff',
 		'type' => 'color'
 	);
     
     $options[] = array(
-        'desc' => __( 'Padding in px', 'startup-reloaded' ),
+        'desc' => __( 'Padding in px', 'startup-revolution' ),
 		'id' => 'page-header-padding',
 		'std' => '50',
 		'type' => 'text',
@@ -331,13 +331,13 @@ function optionsframework_options() {
 	);
     
 	$page_header_positions = array(
-		'left' => __( 'Left', 'startup-reloaded' ),
-		'center' => __( 'Center', 'startup-reloaded' ),
-		'right' => __( 'Right', 'startup-reloaded' )
+		'left' => __( 'Left', 'startup-revolution' ),
+		'center' => __( 'Center', 'startup-revolution' ),
+		'right' => __( 'Right', 'startup-revolution' )
 	);
     
 	$options[] = array(
-		'desc' => __( 'Content position', 'startup-reloaded' ),
+		'desc' => __( 'Content position', 'startup-revolution' ),
 		'id' => 'page-header-position',
 		'std' => 'left',
 		'type' => 'select',
@@ -346,21 +346,21 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-        'desc' => __( 'Put the text inside a box', 'startup-reloaded' ),
+        'desc' => __( 'Put the text inside a box', 'startup-revolution' ),
 		'id' => 'page-header-boxed',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-		'name' => __( 'Footer', 'startup-reloaded' ),
+		'name' => __( 'Footer', 'startup-revolution' ),
 		'id' => 'footer-color',
 		'std' => '#323232',
 		'type' => 'color'
 	);
     
     $options[] = array(
-		'name' => __( 'Custom CSS', 'startup-reloaded' ),
+		'name' => __( 'Custom CSS', 'startup-revolution' ),
 		'id' => 'custom-css',
 		'type' => 'textarea'
 	);
@@ -374,30 +374,30 @@ function optionsframework_options() {
     //*****************************************************************************
     
     $options[] = array(
-		'name' => __( 'Navigation', 'startup-reloaded' ),
+		'name' => __( 'Navigation', 'startup-revolution' ),
 		'type' => 'heading'
 	);
     
 	$options[] = array(
-		'name' => __( 'Navbar', 'startup-reloaded' ),
-        'desc' => __( 'Activate', 'startup-reloaded' ),
+		'name' => __( 'Navbar', 'startup-revolution' ),
+        'desc' => __( 'Activate', 'startup-revolution' ),
 		'id' => 'navbar-on',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
 
 	$navbar_position = array(
-        'navbar-normal'       => __( 'Normal', 'startup-reloaded' ),
-		'navbar-static-top'   => __( 'Static top', 'startup-reloaded' ),
-		'navbar-fixed-top'    => __( 'Fixed top', 'startup-reloaded' ),
-        'navbar-fixed-slider' => __( 'Fixed under slider', 'startup-reloaded' ),
-        'navbar-static-header' => __( 'Static under header', 'startup-reloaded' ),
-        'navbar-fixed-header' => __( 'Fixed under header', 'startup-reloaded' ),
-		'navbar-fixed-bottom' => __( 'Fixed bottom', 'startup-reloaded' )
+        'navbar-normal'       => __( 'Normal', 'startup-revolution' ),
+		'navbar-static-top'   => __( 'Static top', 'startup-revolution' ),
+		'navbar-fixed-top'    => __( 'Fixed top', 'startup-revolution' ),
+        'navbar-fixed-slider' => __( 'Fixed under slider', 'startup-revolution' ),
+        'navbar-static-header' => __( 'Static under header', 'startup-revolution' ),
+        'navbar-fixed-header' => __( 'Fixed under header', 'startup-revolution' ),
+		'navbar-fixed-bottom' => __( 'Fixed bottom', 'startup-revolution' )
 	);
     
 	$options[] = array(
-		'desc' => __( 'Position', 'startup-reloaded' ),
+		'desc' => __( 'Position', 'startup-revolution' ),
 		'id' => 'navbar-position',
 		'std' => 'navbar-fixed-top',
 		'type' => 'select',
@@ -406,14 +406,14 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-		'desc' => __( 'Transparent on homepage. Available for fixed top navbar only.', 'startup-reloaded' ),
+		'desc' => __( 'Transparent on homepage. Available for fixed top navbar only.', 'startup-revolution' ),
 		'id' => 'navbar-transparent',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-		'desc' => __( 'Translucent background on hover. For transparent navbar only.', 'startup-reloaded' ),
+		'desc' => __( 'Translucent background on hover. For transparent navbar only.', 'startup-revolution' ),
 		'id' => 'navbar-translucent',
 		'std' => '1',
 		'type' => 'checkbox'
@@ -426,13 +426,13 @@ function optionsframework_options() {
 	);
     
     $navbar_logo_positions = array(
-		'navbar-left' => __( 'Left', 'startup-reloaded' ),
-		'navbar-right' => __( 'Right', 'startup-reloaded' ),
-        '' => __( 'Hidden', 'startup-reloaded' )
+		'navbar-left' => __( 'Left', 'startup-revolution' ),
+		'navbar-right' => __( 'Right', 'startup-revolution' ),
+        '' => __( 'Hidden', 'startup-revolution' )
 	);
     
 	$options[] = array(
-		'desc' => __( 'Logo Position', 'startup-reloaded' ),
+		'desc' => __( 'Logo Position', 'startup-revolution' ),
 		'id' => 'navbar-logo-position',
 		'std' => 'navbar-left',
 		'type' => 'select',
@@ -441,12 +441,12 @@ function optionsframework_options() {
 	);
     
     $navbar_item_positions = array(
-		'navbar-left' => __( 'Left', 'startup-reloaded' ),
-		'navbar-right' => __( 'Right', 'startup-reloaded' )
+		'navbar-left' => __( 'Left', 'startup-revolution' ),
+		'navbar-right' => __( 'Right', 'startup-revolution' )
 	);
     
     $options[] = array(
-		'desc' => __( 'Menu Position', 'startup-reloaded' ),
+		'desc' => __( 'Menu Position', 'startup-revolution' ),
 		'id' => 'navbar-menu-position',
 		'std' => 'navbar-right',
 		'type' => 'select',
@@ -455,7 +455,7 @@ function optionsframework_options() {
 	);
     
     $options[] = array(
-		'desc' => __( 'Hamburger Position', 'startup-reloaded' ),
+		'desc' => __( 'Hamburger Position', 'startup-revolution' ),
 		'id' => 'navbar-hamburger-position',
 		'std' => 'navbar-right',
 		'type' => 'select',
@@ -464,66 +464,66 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'desc' => __( 'Inverse style', 'startup-reloaded' ),
+		'desc' => __( 'Inverse style', 'startup-revolution' ),
 		'id' => 'navbar-inverse',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'name' => __( 'Search', 'startup-reloaded' ),
-		'desc' => __( 'Activate search form. (experimental)', 'startup-reloaded' ),
+        'name' => __( 'Search', 'startup-revolution' ),
+		'desc' => __( 'Activate search form. (experimental)', 'startup-revolution' ),
 		'id' => 'navbar-search',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-		'name' => __( 'Fullscreen panel', 'startup-reloaded' ),
-        'desc' => __( 'Activate. Use <strong>data-toggle="modal" data-target="#fullscreen-panel"</strong> on any button / link or activate navbar hamburger below to make the magic happen.', 'startup-reloaded' ),
+		'name' => __( 'Fullscreen panel', 'startup-revolution' ),
+        'desc' => __( 'Activate. Use <strong>data-toggle="modal" data-target="#fullscreen-panel"</strong> on any button / link or activate navbar hamburger below to make the magic happen.', 'startup-revolution' ),
 		'id' => 'fullscreen-panel-on',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'desc' => __( 'Activate navbar hamburger.', 'startup-reloaded' ),
+        'desc' => __( 'Activate navbar hamburger.', 'startup-revolution' ),
 		'id' => 'fullscreen-panel-hamburger',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'desc' => __( 'Override hamburger icon with a text.', 'startup-reloaded' ),
+        'desc' => __( 'Override hamburger icon with a text.', 'startup-revolution' ),
 		'id' => 'fullscreen-panel-hamburger-text',
         'type' => 'text',
         'class' => 'mini'
 	);
     
 	$options[] = array(
-		'name' => __( 'Left panel', 'startup-reloaded' ),
-        'desc' => __( 'Activate. Use <strong>#left-panel</strong> on any link / menu item or activate navbar hamburger below to make the magic go on.', 'startup-reloaded' ),
+		'name' => __( 'Left panel', 'startup-revolution' ),
+        'desc' => __( 'Activate. Use <strong>#left-panel</strong> on any link / menu item or activate navbar hamburger below to make the magic go on.', 'startup-revolution' ),
 		'id' => 'left-panel-on',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'desc' => __( 'Activate navbar hamburger.', 'startup-reloaded' ),
+        'desc' => __( 'Activate navbar hamburger.', 'startup-revolution' ),
 		'id' => 'left-panel-hamburger',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'desc' => __( 'Override hamburger icon with a text.', 'startup-reloaded' ),
+        'desc' => __( 'Override hamburger icon with a text.', 'startup-revolution' ),
 		'id' => 'left-panel-hamburger-text',
         'type' => 'text',
         'class' => 'mini'
 	);
     
     $options[] = array(
-        'desc' => __( 'Push page content', 'startup-reloaded' ),
+        'desc' => __( 'Push page content', 'startup-revolution' ),
 		'id' => 'left-panel-push',
 		'std' => '1',
 		'type' => 'checkbox'
@@ -536,60 +536,60 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-		'desc' => __( 'Theme', 'startup-reloaded' ),
+		'desc' => __( 'Theme', 'startup-revolution' ),
 		'id' => 'left-panel-theme',
 		'std' => 'theme-dark',
 		'type' => 'select',
 		'class' => 'mini', //mini, tiny, small
 		'options' => array(
-            'theme-light' => __( 'Light', 'startup-reloaded' ),
-            'theme-dark' => __( 'Dark', 'startup-reloaded' )
+            'theme-light' => __( 'Light', 'startup-revolution' ),
+            'theme-dark' => __( 'Dark', 'startup-revolution' )
         )
 	);
     
 	$options[] = array(
-		'desc' => __( 'Mode', 'startup-reloaded' ),
+		'desc' => __( 'Mode', 'startup-revolution' ),
 		'id' => 'left-panel-mode',
 		'std' => 'default',
         'type' => 'select',
 		'class' => 'mini', //mini, tiny, small
 		'options' => array(
-            'default' => __( 'Default', 'startup-reloaded' ),
-            'tileview' => __( 'Tileview', 'startup-reloaded' )
+            'default' => __( 'Default', 'startup-revolution' ),
+            'tileview' => __( 'Tileview', 'startup-revolution' )
         )
 	);
     
     $options[] = array(
-        'desc' => __( 'Slide items (optional for default mode only)', 'startup-reloaded' ),
+        'desc' => __( 'Slide items (optional for default mode only)', 'startup-revolution' ),
 		'id' => 'left-panel-slide',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
      
 	$options[] = array(
-		'name' => __( 'Right panel', 'startup-reloaded' ),
-        'desc' => __( 'Activate. Use <strong>#right-panel</strong> on any link / menu item or activate navbar hamburger below to make the fantasy happen.', 'startup-reloaded' ),
+		'name' => __( 'Right panel', 'startup-revolution' ),
+        'desc' => __( 'Activate. Use <strong>#right-panel</strong> on any link / menu item or activate navbar hamburger below to make the fantasy happen.', 'startup-revolution' ),
 		'id' => 'right-panel-on',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'desc' => __( 'Activate navbar hamburger.', 'startup-reloaded' ),
+        'desc' => __( 'Activate navbar hamburger.', 'startup-revolution' ),
 		'id' => 'right-panel-hamburger',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
     
     $options[] = array(
-        'desc' => __( 'Override hamburger icon with a text.', 'startup-reloaded' ),
+        'desc' => __( 'Override hamburger icon with a text.', 'startup-revolution' ),
 		'id' => 'right-panel-hamburger-text',
         'type' => 'text',
         'class' => 'mini'
 	);
     
     $options[] = array(
-        'desc' => __( 'Push page content', 'startup-reloaded' ),
+        'desc' => __( 'Push page content', 'startup-revolution' ),
 		'id' => 'right-panel-push',
 		'std' => '1',
 		'type' => 'checkbox'
@@ -602,31 +602,31 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-		'desc' => __( 'Theme', 'startup-reloaded' ),
+		'desc' => __( 'Theme', 'startup-revolution' ),
 		'id' => 'right-panel-theme',
 		'std' => 'theme-dark',
 		'type' => 'select',
 		'class' => 'mini', //mini, tiny, small
 		'options' => array(
-            'theme-light' => __( 'Light', 'startup-reloaded' ),
-            'theme-dark' => __( 'Dark', 'startup-reloaded' )
+            'theme-light' => __( 'Light', 'startup-revolution' ),
+            'theme-dark' => __( 'Dark', 'startup-revolution' )
         )
 	);
     
 	$options[] = array(
-		'desc' => __( 'Mode', 'startup-reloaded' ),
+		'desc' => __( 'Mode', 'startup-revolution' ),
 		'id' => 'right-panel-mode',
 		'std' => 'default',
         'type' => 'select',
 		'class' => 'mini', //mini, tiny, small
 		'options' => array(
-            'default' => __( 'Default', 'startup-reloaded' ),
-            'tileview' => __( 'Tileview', 'startup-reloaded' )
+            'default' => __( 'Default', 'startup-revolution' ),
+            'tileview' => __( 'Tileview', 'startup-revolution' )
         )
 	);
     
     $options[] = array(
-        'desc' => __( 'Slide items (optional for default mode only)', 'startup-reloaded' ),
+        'desc' => __( 'Slide items (optional for default mode only)', 'startup-revolution' ),
 		'id' => 'right-panel-slide',
 		'std' => '1',
 		'type' => 'checkbox'
@@ -643,31 +643,31 @@ function optionsframework_options() {
     if (is_plugin_active('startup-cpt-slider/startup-cpt-slider.php')){
     
 	$options[] = array(
-		'name' => __( 'Slider', 'startup-reloaded' ),
+		'name' => __( 'Slider', 'startup-revolution' ),
 		'type' => 'heading'
 	);
     
 	$options[] = array(
-		'desc' => __( 'Activate on homepage', 'startup-reloaded' ),
+		'desc' => __( 'Activate on homepage', 'startup-revolution' ),
 		'id' => 'slider-on',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
         
     $options[] = array(
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'slider-order',
 		'std' => 'menu_order',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
         
     $options[] = array(
-		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'slider-number',
 		'std' => '',
 		'type' => 'text',
@@ -675,7 +675,7 @@ function optionsframework_options() {
 	);
     
     $options[] = array(
-		'desc' => __( 'Height in px. "100%" for full viewport height', 'startup-reloaded' ),
+		'desc' => __( 'Height in px. "100%" for full viewport height', 'startup-revolution' ),
 		'id' => 'slider-height',
 		'std' => '400',
 		'type' => 'text',
@@ -683,7 +683,7 @@ function optionsframework_options() {
 	);
     
     $options[] = array(
-		'desc' => __( 'Interval in ms or false', 'startup-reloaded' ),
+		'desc' => __( 'Interval in ms or false', 'startup-revolution' ),
 		'id' => 'slider-interval',
 		'std' => '4000',
 		'type' => 'text',
@@ -691,12 +691,12 @@ function optionsframework_options() {
 	);
     
     $slider_transition = array(
-		'carousel-slide' => __( 'Slide', 'startup-reloaded' ),
-		'carousel-fade' => __( 'Fade', 'startup-reloaded' )
+		'carousel-slide' => __( 'Slide', 'startup-revolution' ),
+		'carousel-fade' => __( 'Fade', 'startup-revolution' )
 	);
     
     $options[] = array(
-		'desc' => __( 'Transition', 'startup-reloaded' ),
+		'desc' => __( 'Transition', 'startup-revolution' ),
 		'id' => 'slider-transition',
 		'std' => 'carousel-fade',
 		'type' => 'select',
@@ -705,7 +705,7 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-		'desc' => __( 'Show arrows if more than one slide', 'startup-reloaded' ),
+		'desc' => __( 'Show arrows if more than one slide', 'startup-revolution' ),
 		'id' => 'slider-arrows',
 		'std' => '1',
 		'type' => 'checkbox'
@@ -714,7 +714,7 @@ function optionsframework_options() {
     require get_template_directory() . '/inc/hover-css.php';
     
     $options[] = array(
-		'desc' => __( 'Arrows hover effect', 'startup-reloaded' ),
+		'desc' => __( 'Arrows hover effect', 'startup-revolution' ),
 		'id' => 'slider-arrows-hover',
 		'std' => 'float',
 		'type' => 'select',
@@ -723,13 +723,13 @@ function optionsframework_options() {
 	);
     
     $slider_navigation= array(
-        'slider_no_nav' => __( 'None', 'startup-reloaded' ),
-		'slider_pagination' => __( 'Pagination', 'startup-reloaded' ),
-		'slider_content_arrow' => __( 'Content arrow', 'startup-reloaded' )
+        'slider_no_nav' => __( 'None', 'startup-revolution' ),
+		'slider_pagination' => __( 'Pagination', 'startup-revolution' ),
+		'slider_content_arrow' => __( 'Content arrow', 'startup-revolution' )
 	);
     
     $options[] = array(
-		'desc' => __( 'Navigation type', 'startup-reloaded' ),
+		'desc' => __( 'Navigation type', 'startup-revolution' ),
 		'id' => 'slider-navigation',
 		'std' => 'slider_content_arrow',
 		'type' => 'select',
@@ -747,14 +747,14 @@ function optionsframework_options() {
     //*****************************************************************************
     
 	$options[] = array(
-		'name' => __( 'Post types', 'startup-reloaded' ),
+		'name' => __( 'Post types', 'startup-revolution' ),
 		'type' => 'heading'
 	);
     
     if (is_plugin_active('startup-cpt-home/startup-cpt-home.php')){
     $options[] = array(
-		'name' => __( 'Home', 'startup-reloaded' ),
-        'desc' => __( 'Generate home content with Home plugin custom post sections. If not, use a classic page with the Home template.', 'startup-reloaded' ),
+		'name' => __( 'Home', 'startup-revolution' ),
+        'desc' => __( 'Generate home content with Home plugin custom post sections. If not, use a classic page with the Home template.', 'startup-revolution' ),
 		'id' => 'home-type',
 		'std' => '0',
 		'type' => 'checkbox'
@@ -762,13 +762,13 @@ function optionsframework_options() {
     }
         
     $blog_styles = array(
-		'grid' => __( 'Grid', 'startup-reloaded' ),
-		'shuffle' => __( 'Shuffle', 'startup-reloaded' )
+		'grid' => __( 'Grid', 'startup-revolution' ),
+		'shuffle' => __( 'Shuffle', 'startup-revolution' )
 	);
     
 	$options[] = array(
-		'name' => __( 'Blog', 'startup-reloaded' ),
-        'desc' => __( 'Style', 'startup-reloaded' ),
+		'name' => __( 'Blog', 'startup-revolution' ),
+        'desc' => __( 'Style', 'startup-revolution' ),
 		'id' => 'blog-style',
 		'std' => 'shuffle',
 		'type' => 'select',
@@ -777,12 +777,12 @@ function optionsframework_options() {
 	);
     
     $blog_filters = array(
-		'buttons' => __( 'Buttons', 'startup-reloaded' ),
-		'dropdown' => __( 'Dropdown', 'startup-reloaded' )
+		'buttons' => __( 'Buttons', 'startup-revolution' ),
+		'dropdown' => __( 'Dropdown', 'startup-revolution' )
 	);
     
     $options[] = array(
-        'desc' => __( 'Shuffle filter type', 'startup-reloaded' ),
+        'desc' => __( 'Shuffle filter type', 'startup-revolution' ),
 		'id' => 'blog-filter',
 		'std' => 'dropdown',
 		'type' => 'select',
@@ -791,7 +791,7 @@ function optionsframework_options() {
 	);
     
     $options[] = array(
-		'desc' => __( 'Max number of items to show for grid style. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show for grid style. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'blog-number',
 		'std' => '8',
 		'type' => 'text',
@@ -800,13 +800,13 @@ function optionsframework_options() {
     
     if (is_plugin_active('startup-cpt-portfolio/startup-cpt-portfolio.php')){
     $portfolio_styles = array(
-		'grid' => __( 'Grid', 'startup-reloaded' ),
-		'shuffle' => __( 'Shuffle', 'startup-reloaded' )
+		'grid' => __( 'Grid', 'startup-revolution' ),
+		'shuffle' => __( 'Shuffle', 'startup-revolution' )
 	);
     
 	$options[] = array(
-		'name' => __( 'Portfolio', 'startup-reloaded' ),
-        'desc' => __( 'Style', 'startup-reloaded' ),
+		'name' => __( 'Portfolio', 'startup-revolution' ),
+        'desc' => __( 'Style', 'startup-revolution' ),
 		'id' => 'portfolio-style',
 		'std' => 'grid',
 		'type' => 'select',
@@ -815,19 +815,19 @@ function optionsframework_options() {
 	);
         
     $options[] = array(
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'portfolio-order',
 		'std' => 'menu_order',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
     
     $options[] = array(
-		'desc' => __( 'Max number of items to show for grid style. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show for grid style. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'portfolio-number',
 		'std' => '8',
 		'type' => 'text',
@@ -837,19 +837,19 @@ function optionsframework_options() {
     
     if (is_plugin_active('startup-cpt-testimonials/startup-cpt-testimonials.php')){
     $options[] = array(
-		'name' => __( 'Testimonials', 'startup-reloaded' ),
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+		'name' => __( 'Testimonials', 'startup-revolution' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'testimonials-order',
 		'std' => 'rand',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
     $options[] = array(
-		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'testimonials-number',
 		'std' => '',
 		'type' => 'text',
@@ -859,19 +859,19 @@ function optionsframework_options() {
 
     if (is_plugin_active('startup-cpt-partners/startup-cpt-partners.php')){
     $options[] = array(
-		'name' => __( 'Partners', 'startup-reloaded' ),
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+		'name' => __( 'Partners', 'startup-revolution' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'partners-order',
 		'std' => 'menu_order',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
     $options[] = array(
-		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'partners-number',
 		'std' => '',
 		'type' => 'text',
@@ -881,19 +881,19 @@ function optionsframework_options() {
     
     if (is_plugin_active('startup-cpt-milestones/startup-cpt-milestones.php')){
     $options[] = array(
-		'name' => __( 'Milestones', 'startup-reloaded' ),
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+		'name' => __( 'Milestones', 'startup-revolution' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'milestones-order',
 		'std' => 'menu_order',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
     $options[] = array(
-		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'milestones-number',
 		'std' => '',
 		'type' => 'text',
@@ -903,19 +903,19 @@ function optionsframework_options() {
     
     if (is_plugin_active('startup-cpt-products/startup-cpt-products.php')){
     $options[] = array(
-		'name' => __( 'Products', 'startup-reloaded' ),
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+		'name' => __( 'Products', 'startup-revolution' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'products-order',
 		'std' => 'menu_order',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
     $options[] = array(
-		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'products-number',
 		'std' => '',
 		'type' => 'text',
@@ -925,19 +925,19 @@ function optionsframework_options() {
     
     if (is_plugin_active('startup-cpt-projects/startup-cpt-projects.php')){
     $options[] = array(
-		'name' => __( 'Projects', 'startup-reloaded' ),
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+		'name' => __( 'Projects', 'startup-revolution' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'projects-order',
 		'std' => 'menu_order',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
     $options[] = array(
-		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'projects-number',
 		'std' => '',
 		'type' => 'text',
@@ -947,19 +947,19 @@ function optionsframework_options() {
     
     if (is_plugin_active('startup-cpt-services/startup-cpt-services.php')){
     $options[] = array(
-		'name' => __( 'Services', 'startup-reloaded' ),
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+		'name' => __( 'Services', 'startup-revolution' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'services-order',
 		'std' => 'menu_order',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
     $options[] = array(
-		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'services-number',
 		'std' => '',
 		'type' => 'text',
@@ -969,25 +969,25 @@ function optionsframework_options() {
     
     if (is_plugin_active('startup-cpt-team/startup-cpt-team.php')){
     $options[] = array(
-        'name' => __( 'Team', 'startup-reloaded' ),
-		'desc' => __( 'Carousel if more than 4', 'startup-reloaded' ),
+        'name' => __( 'Team', 'startup-revolution' ),
+		'desc' => __( 'Carousel if more than 4', 'startup-revolution' ),
 		'id' => 'team-slider',
 		'std' => '1',
 		'type' => 'checkbox'
 	);
     $options[] = array(
-        'desc' => __( 'Display order', 'startup-reloaded' ),
+        'desc' => __( 'Display order', 'startup-revolution' ),
 		'id' => 'team-order',
 		'std' => 'menu_order',
 		'type' => 'select',
         'class' => 'mini',
         'options' => array(
-		  'rand' => __( 'Random', 'startup-reloaded' ),
-		  'menu_order' => __( 'Menu order', 'startup-reloaded' )
+		  'rand' => __( 'Random', 'startup-revolution' ),
+		  'menu_order' => __( 'Menu order', 'startup-revolution' )
             )
 	);
     $options[] = array(
-		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-reloaded' ),
+		'desc' => __( 'Max number of items to show. Leave empty for unlimited.', 'startup-revolution' ),
 		'id' => 'team-number',
 		'std' => '',
 		'type' => 'text',
@@ -1004,13 +1004,13 @@ function optionsframework_options() {
     //*****************************************************************************
     
 	$options[] = array(
-		'name' => __( 'Advanced', 'startup-reloaded' ),
+		'name' => __( 'Advanced', 'startup-revolution' ),
 		'type' => 'heading'
 	);
     
 	$options[] = array(
-		'name' => __( 'Mise en forme automatique', 'startup-reloaded' ),
-		'desc' => __( 'Cocher pour <strong>desactiver</strong> la mise en forme automatique de l\'editeur WordPress. Evite les br, p, et suppression de lignes vides, etc...', 'startup-reloaded' ),
+		'name' => __( 'Mise en forme automatique', 'startup-revolution' ),
+		'desc' => __( 'Cocher pour <strong>desactiver</strong> la mise en forme automatique de l\'editeur WordPress. Evite les br, p, et suppression de lignes vides, etc...', 'startup-revolution' ),
 		'id' => 'auto-format-off',
 		'std' => '0',
 		'type' => 'checkbox'

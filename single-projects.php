@@ -2,7 +2,7 @@
 /**
  * The template for displaying the projects.
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 get_header(); ?>

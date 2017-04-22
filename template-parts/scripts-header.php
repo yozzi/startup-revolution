@@ -38,7 +38,7 @@ require get_template_directory() . '/inc/theme-options.php';
 
     if( $left_panel_on ){
         $location_left_id = 'left-panel';
-        $left_panel_title = __('Navigation', 'startup-reloaded');
+        $left_panel_title = __('Navigation', 'startup-revolution');
         if (isset($menu_locations[ $location_left_id ])) {
             foreach ($menus as $menu) {
                 if ($menu->term_id == $menu_locations[ $location_left_id ]) {
@@ -84,7 +84,7 @@ require get_template_directory() . '/inc/theme-options.php';
 
     if( $right_panel_on ){
         $location_right_id = 'right-panel';
-        $right_panel_title = __('Navigation', 'startup-reloaded');
+        $right_panel_title = __('Navigation', 'startup-revolution');
         if (isset($menu_locations[ $location_right_id ])) {
             foreach ($menus as $menu) {
                 if ($menu->term_id == $menu_locations[ $location_right_id ]) {

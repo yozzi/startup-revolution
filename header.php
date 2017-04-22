@@ -1,6 +1,6 @@
 <?php /** * The header for our theme. * * Displays all of the <head> section and everything up till
         <div id="content">
-    * * @package StartUp Reloaded */
+    * * @package StartUp Revolution */
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -52,7 +52,7 @@ if ( $responsive ) { //Fonction à compléter mais c'est un bon début ?>
             <?php if( $right_panel_on ){ get_template_part( 'template-parts/panel', 'right' ); } ?>
             
             <a class="skip-link screen-reader-text" href="#content">
-                <?php esc_html_e( 'Skip to content', 'startup-reloaded' ); ?>
+                <?php esc_html_e( 'Skip to content', 'startup-revolution' ); ?>
             </a>
 
             <?php if(

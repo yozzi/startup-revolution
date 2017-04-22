@@ -91,7 +91,7 @@ $total_team = count($team);
                                         <?php } ?>
                                         <?php if ( $team_page_test ) { ?>
                                             <p>
-                                                <a href="<?php echo $team_page ?>" class="btn btn-custom btn-sm" role="button"><?php _e( 'Profile', 'startup-reloaded' ) ?></a>
+                                                <a href="<?php echo $team_page ?>" class="btn btn-custom btn-sm" role="button"><?php _e( 'Profile', 'startup-revolution' ) ?></a>
                                             </p>
                                         <?php } ?>
                                     </div>

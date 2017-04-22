@@ -24,7 +24,7 @@ $total_timelines = count($timelines);
                         <p><?php echo do_shortcode($timeline->post_content) ?></p>
                         <?php if ( $page_test ) { ?>
                                             <p>
-                                                <a href="<?php echo $page ?>" class="btn btn-custom btn-sm"><?php _e( 'Read more', 'startup-reloaded' ) ?></a>
+                                                <a href="<?php echo $page ?>" class="btn btn-custom btn-sm"><?php _e( 'Read more', 'startup-revolution' ) ?></a>
                                             </p>
                                         <?php } ?>
                         <span class="cd-date"><?php echo $date ?></span>

@@ -10,7 +10,7 @@
                 <div class="col-xs-12">
                     <form class="navbar-form"> 
                         <div class="input-group">
-                            <span class="input-group-addon"><?php _e( 'With price', 'startup-reloaded' ) ?></span>
+                            <span class="input-group-addon"><?php _e( 'With price', 'startup-revolution' ) ?></span>
                             
                             <input type="text" class="form-control" name="fname" value="<?php echo get_permalink(); ?>?<?php echo $tapu ?>">
                             
@@ -19,7 +19,7 @@
                             </span>
                         </div>
                         <div class="input-group">
-                            <span class="input-group-addon"><?php _e( 'Without price', 'startup-reloaded' ) ?></span>
+                            <span class="input-group-addon"><?php _e( 'Without price', 'startup-revolution' ) ?></span>
                             
                             <input type="text" class="form-control" name="fname" value="<?php echo get_permalink(); ?>">
                             
@@ -29,7 +29,7 @@
                         </div>
                         
                         <div class="input-group tools">
-                            <a href="mailto:?subject=Croisi&egrave;res AML : <?php echo get_the_title(); ?>&body=<?php _e( 'Hi, here is the link for the page', 'startup-reloaded' ) ?> <?php echo get_the_title(); ?> : <?php echo get_permalink(); ?><?php if (array_key_exists($tapu,$_GET)) { echo '%3F' . $tapu; } ?>" class="btn btn-default" target=_blank><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a href="mailto:?subject=Croisi&egrave;res AML : <?php echo get_the_title(); ?>&body=<?php _e( 'Hi, here is the link for the page', 'startup-revolution' ) ?> <?php echo get_the_title(); ?> : <?php echo get_permalink(); ?><?php if (array_key_exists($tapu,$_GET)) { echo '%3F' . $tapu; } ?>" class="btn btn-default" target=_blank><i class="fa fa-envelope" aria-hidden="true"></i></a>
 
                             <?php if(function_exists('pf_show_link')){
                                 pf_show_link(); ?>

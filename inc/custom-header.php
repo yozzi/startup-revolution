@@ -12,7 +12,7 @@
 	<?php endif; // End header image check. ?>
 
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 /**

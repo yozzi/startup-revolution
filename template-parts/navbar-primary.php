@@ -21,7 +21,7 @@ require get_template_directory() . '/inc/theme-options.php';
             <?php if ( has_nav_menu( 'navbar-primary' ) ) { ?>
                     <?php if ($responsive == 1) { ?>
                         <button type="button" class="navbar-toggle <?php if ($navbar_hamburger_position == 'navbar-left') {echo 'left-toggle';} else {echo 'right-toggle';}?>" data-toggle="collapse" data-target=".navbar-sur-collapse">
-                            <span class="sr-only"><?php _e( 'Toggle navigation', 'startup-reloaded' ) ?></span>
+                            <span class="sr-only"><?php _e( 'Toggle navigation', 'startup-revolution' ) ?></span>
                             <span class="icon-bar top-bar"></span>
                             <span class="icon-bar middle-bar"></span>
                             <span class="icon-bar bottom-bar"></span>
@@ -50,7 +50,7 @@ require get_template_directory() . '/inc/theme-options.php';
                      <?php } else { ?>
                         <li class="icon hvr-push">
                             <button id="fullscreen-panel-button" type="button" class="custom-hamburger navbar-toggle" data-toggle="modal" data-target="#fullscreen-panel">
-                                <span class="sr-only"><?php _e( 'Toggle fullscreen panel', 'startup-reloaded' ) ?></span>
+                                <span class="sr-only"><?php _e( 'Toggle fullscreen panel', 'startup-revolution' ) ?></span>
                                 <span class="icon-bar top-bar"></span>
                                 <span class="icon-bar middle-bar"></span>
                                 <span class="icon-bar bottom-bar"></span>
@@ -70,7 +70,7 @@ require get_template_directory() . '/inc/theme-options.php';
                      <?php } else { ?>
                         <li class="icon hvr-push">
                             <button id="right-panel-button" type="button" class="custom-hamburger navbar-toggle">
-                                <span class="sr-only"><?php _e( 'Toggle right panel', 'startup-reloaded' ) ?></span>
+                                <span class="sr-only"><?php _e( 'Toggle right panel', 'startup-revolution' ) ?></span>
                                 <span class="icon-bar top-bar"></span>
                                 <span class="icon-bar middle-bar"></span>
                                 <span class="icon-bar bottom-bar"></span>
@@ -90,7 +90,7 @@ require get_template_directory() . '/inc/theme-options.php';
                      <?php } else { ?>
                         <li class="icon hvr-push">
                             <button id="left-panel-button" type="button" class="custom-hamburger navbar-toggle">
-                                <span class="sr-only"><?php _e( 'Toggle left panel', 'startup-reloaded' ) ?></span>
+                                <span class="sr-only"><?php _e( 'Toggle left panel', 'startup-revolution' ) ?></span>
                                 <span class="icon-bar top-bar"></span>
                                 <span class="icon-bar middle-bar"></span>
                                 <span class="icon-bar bottom-bar"></span>

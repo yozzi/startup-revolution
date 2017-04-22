@@ -8,46 +8,46 @@ function startup_reloaded_metabox_pages() {
 
 	$cmb_box = new_cmb2_box( array(
 		'id'            => $prefix . 'metabox',
-		'title'         => __( 'Header', 'startup-reloaded' ),
+		'title'         => __( 'Header', 'startup-revolution' ),
 		'object_types'  => array( 'page' )
 	) );
     
     $cmb_box->add_field( array(
-		'name'             => __( 'Hidden', 'startup-reloaded' ),
-        'desc'             => __( 'Hide the header. Or not.', 'startup-reloaded' ),
+		'name'             => __( 'Hidden', 'startup-revolution' ),
+        'desc'             => __( 'Hide the header. Or not.', 'startup-revolution' ),
 		'id'               => $prefix . 'header_visible',
 		'type'             => 'checkbox'
 	) );
     
     $cmb_box->add_field( array(
-		'name'             => __( 'Boxed width', 'startup-reloaded' ),
-        'desc'             => __( 'Got to test on boxed design...', 'startup-reloaded' ),
+		'name'             => __( 'Boxed width', 'startup-revolution' ),
+        'desc'             => __( 'Got to test on boxed design...', 'startup-revolution' ),
 		'id'               => $prefix . 'header_boxed_width',
 		'type'             => 'checkbox'
 	) );
     
     $cmb_box->add_field( array(
-        'name'    => __( 'Background color', 'startup-reloaded' ),
+        'name'    => __( 'Background color', 'startup-revolution' ),
         'id'      => $prefix . 'header_background_color',
         'type'    => 'colorpicker',
         'default' => ''
     ) );
     
     $cmb_box->add_field( array(
-        'name'    => __( 'Text color', 'startup-reloaded' ),
+        'name'    => __( 'Text color', 'startup-revolution' ),
         'id'      => $prefix . 'header_color',
         'type'    => 'colorpicker',
         'default' => ''
     ) );
     
     $cmb_box->add_field( array(
-		'name'       => __( 'Subtitle', 'startup-reloaded' ),
+		'name'       => __( 'Subtitle', 'startup-revolution' ),
 		'id'         => $prefix . 'header_subtitle',
 		'type'       => 'text'
 	) );
     
     $cmb_box->add_field( array(
-		'name' => __( 'Background image', 'startup-reloaded' ),
+		'name' => __( 'Background image', 'startup-revolution' ),
 		'id'   => $prefix . 'header_background',
 		'type' => 'file',
         // Optionally hide the text input for the url:
@@ -57,67 +57,67 @@ function startup_reloaded_metabox_pages() {
 	) );
     
     $cmb_box->add_field( array(
-		'name'             => __( 'Background image position', 'startup-reloaded' ),
+		'name'             => __( 'Background image position', 'startup-revolution' ),
 		'id'               => $prefix . 'header_background_position',
 		'type'             => 'select',
         'default'          => 'center',
 		'options'          => array(
-			'top' => __( 'Top', 'startup-reloaded' ),
-			'center' => __( 'Center', 'startup-reloaded' ),
-			'bottom' => __( 'Bottom', 'startup-reloaded' )
+			'top' => __( 'Top', 'startup-revolution' ),
+			'center' => __( 'Center', 'startup-revolution' ),
+			'bottom' => __( 'Bottom', 'startup-revolution' )
 		)
 	) );
     
     $cmb_box->add_field( array(
-		'name'       => __( 'Padding', 'startup-reloaded' ),
-        'desc'             => __( 'Padding of page header in px', 'startup-reloaded' ),
+		'name'       => __( 'Padding', 'startup-revolution' ),
+        'desc'             => __( 'Padding of page header in px', 'startup-revolution' ),
 		'id'         => $prefix . 'header_padding',
 		'type'       => 'text'
 	) );
     
     $cmb_box->add_field( array(
-		'name'             => __( 'Content position', 'startup-reloaded' ),
+		'name'             => __( 'Content position', 'startup-revolution' ),
 		'id'               => $prefix . 'header_position',
 		'type'             => 'select',
 		'show_option_none' => 'Default',
         'default'          => '',
 		'options'          => array(
-			'left' => __( 'Left', 'startup-reloaded' ),
-			'center'   => __( 'Center', 'startup-reloaded' ),
-			'right'     => __( 'Right', 'startup-reloaded' )
+			'left' => __( 'Left', 'startup-revolution' ),
+			'center'   => __( 'Center', 'startup-revolution' ),
+			'right'     => __( 'Right', 'startup-revolution' )
 		)
 	) );
     
      $cmb_box->add_field( array(
-		'name'             => __( 'Effect', 'startup-reloaded' ),
+		'name'             => __( 'Effect', 'startup-revolution' ),
 		'id'               => $prefix . 'header_effect',
 		'type'             => 'select',
 		'show_option_none' => true,
         'default'          => '',
 		'options'          => array(
-			'light' => __( 'Light', 'startup-reloaded' ),
-			'dark'   => __( 'Dark', 'startup-reloaded' ),
-			'trame-01'     => __( 'Trame 1', 'startup-reloaded' ),
-            'trame-02'     => __( 'Trame 2', 'startup-reloaded' )
+			'light' => __( 'Light', 'startup-revolution' ),
+			'dark'   => __( 'Dark', 'startup-revolution' ),
+			'trame-01'     => __( 'Trame 1', 'startup-revolution' ),
+            'trame-02'     => __( 'Trame 2', 'startup-revolution' )
 		)
 	) );
     
     $cmb_box->add_field( array(
-		'name'             => __( 'Boxed', 'startup-reloaded' ),
-        'desc'             => __( 'Put the text inside a box', 'startup-reloaded' ),
+		'name'             => __( 'Boxed', 'startup-revolution' ),
+        'desc'             => __( 'Put the text inside a box', 'startup-revolution' ),
 		'id'               => $prefix . 'header_boxed',
 		'type'             => 'select',
 		'show_option_none' => 'Default',
         'default'          => '',
 		'options'          => array(
-			'no' => __( 'No', 'startup-reloaded' ),
-			'1'   => __( 'Yes', 'startup-reloaded' )
+			'no' => __( 'No', 'startup-revolution' ),
+			'1'   => __( 'Yes', 'startup-revolution' )
 		)
 	) );
     
     $cmb_box->add_field( array(
-		'name'             => __( 'Parallax', 'startup-reloaded' ),
-        'desc'             => __( 'Add parallax effect to the background', 'startup-reloaded' ),
+		'name'             => __( 'Parallax', 'startup-revolution' ),
+        'desc'             => __( 'Add parallax effect to the background', 'startup-revolution' ),
 		'id'               => $prefix . 'header_parallax',
 		'type'             => 'checkbox'
 	) );
@@ -133,7 +133,7 @@ function startup_reloaded_metabox_posts() {
     
         $cmb_box = new_cmb2_box( array(
             'id'            => $prefix . 'author',
-            'title'         => __( 'Author', 'startup-reloaded' ),
+            'title'         => __( 'Author', 'startup-revolution' ),
             'object_types'  => array( 'post' )
         ) );
 
@@ -152,7 +152,7 @@ function startup_reloaded_metabox_posts() {
         }
 
         $cmb_box->add_field( array(
-            'desc'             => __( 'Author to display if different than you.', 'startup-reloaded' ),
+            'desc'             => __( 'Author to display if different than you.', 'startup-revolution' ),
             'id'               => $prefix . 'author',
             'type'             => 'select',
             'show_option_none' => true,
@@ -163,112 +163,112 @@ function startup_reloaded_metabox_posts() {
     
 //    $cmb_box = new_cmb2_box( array(
 //		'id'            => $prefix . 'link',
-//		'title'         => __( 'Link', 'startup-reloaded' ),
+//		'title'         => __( 'Link', 'startup-revolution' ),
 //		'object_types'  => array( 'post' )
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//        'desc'             => __( 'URL of the content : YouTube video, pdf link, etc...', 'startup-reloaded' ),
+//        'desc'             => __( 'URL of the content : YouTube video, pdf link, etc...', 'startup-revolution' ),
 //		'id'         => $prefix . 'link_url',
 //		'type'       => 'text'
 //	) );
 //
 //	$cmb_box = new_cmb2_box( array(
 //		'id'            => $prefix . 'metabox',
-//		'title'         => __( 'Header', 'startup-reloaded' ),
+//		'title'         => __( 'Header', 'startup-revolution' ),
 //		'object_types'  => array( 'post' )
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//		'name'             => __( 'Hidden', 'startup-reloaded' ),
-//        'desc'             => __( 'Hide the header. Or not.', 'startup-reloaded' ),
+//		'name'             => __( 'Hidden', 'startup-revolution' ),
+//        'desc'             => __( 'Hide the header. Or not.', 'startup-revolution' ),
 //		'id'               => $prefix . 'header_visible',
 //		'type'             => 'checkbox'
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//		'name'             => __( 'Boxed width', 'startup-reloaded' ),
-//        'desc'             => __( 'Got to test on boxed design...', 'startup-reloaded' ),
+//		'name'             => __( 'Boxed width', 'startup-revolution' ),
+//        'desc'             => __( 'Got to test on boxed design...', 'startup-revolution' ),
 //		'id'               => $prefix . 'header_boxed_width',
 //		'type'             => 'checkbox'
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//        'name'    => __( 'Background color', 'startup-reloaded' ),
+//        'name'    => __( 'Background color', 'startup-revolution' ),
 //        'id'      => $prefix . 'header_background_color',
 //        'type'    => 'colorpicker',
 //        'default' => ''
 //    ) );
 //    
 //    $cmb_box->add_field( array(
-//        'name'    => __( 'Text color', 'startup-reloaded' ),
+//        'name'    => __( 'Text color', 'startup-revolution' ),
 //        'id'      => $prefix . 'header_color',
 //        'type'    => 'colorpicker',
 //        'default' => ''
 //    ) );
 //    
 //    $cmb_box->add_field( array(
-//		'name'             => __( 'Background image position', 'startup-reloaded' ),
+//		'name'             => __( 'Background image position', 'startup-revolution' ),
 //		'id'               => $prefix . 'header_background_position',
 //		'type'             => 'select',
 //        'default'          => 'center',
 //		'options'          => array(
-//			'top' => __( 'Top', 'startup-reloaded' ),
-//			'center' => __( 'Center', 'startup-reloaded' ),
-//			'bottom' => __( 'Bottom', 'startup-reloaded' )
+//			'top' => __( 'Top', 'startup-revolution' ),
+//			'center' => __( 'Center', 'startup-revolution' ),
+//			'bottom' => __( 'Bottom', 'startup-revolution' )
 //		)
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//		'name'       => __( 'Padding', 'startup-reloaded' ),
-//        'desc'             => __( 'Padding of page header in px', 'startup-reloaded' ),
+//		'name'       => __( 'Padding', 'startup-revolution' ),
+//        'desc'             => __( 'Padding of page header in px', 'startup-revolution' ),
 //		'id'         => $prefix . 'header_padding',
 //		'type'       => 'text'
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//		'name'             => __( 'Content position', 'startup-reloaded' ),
+//		'name'             => __( 'Content position', 'startup-revolution' ),
 //		'id'               => $prefix . 'header_position',
 //		'type'             => 'select',
 //		'show_option_none' => 'Default',
 //        'default'          => '',
 //		'options'          => array(
-//			'left' => __( 'Left', 'startup-reloaded' ),
-//			'center'   => __( 'Center', 'startup-reloaded' ),
-//			'right'     => __( 'Right', 'startup-reloaded' )
+//			'left' => __( 'Left', 'startup-revolution' ),
+//			'center'   => __( 'Center', 'startup-revolution' ),
+//			'right'     => __( 'Right', 'startup-revolution' )
 //		)
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//		'name'             => __( 'Effect', 'startup-reloaded' ),
+//		'name'             => __( 'Effect', 'startup-revolution' ),
 //		'id'               => $prefix . 'header_effect',
 //		'type'             => 'select',
 //		'show_option_none' => true,
 //        'default'          => '',
 //		'options'          => array(
-//			'light' => __( 'Light', 'startup-reloaded' ),
-//			'dark'   => __( 'Dark', 'startup-reloaded' ),
-//			'trame-01'     => __( 'Trame 1', 'startup-reloaded' ),
-//            'trame-02'     => __( 'Trame 2', 'startup-reloaded' )
+//			'light' => __( 'Light', 'startup-revolution' ),
+//			'dark'   => __( 'Dark', 'startup-revolution' ),
+//			'trame-01'     => __( 'Trame 1', 'startup-revolution' ),
+//            'trame-02'     => __( 'Trame 2', 'startup-revolution' )
 //		)
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//		'name'             => __( 'Boxed', 'startup-reloaded' ),
-//        'desc'             => __( 'Put the text inside a box', 'startup-reloaded' ),
+//		'name'             => __( 'Boxed', 'startup-revolution' ),
+//        'desc'             => __( 'Put the text inside a box', 'startup-revolution' ),
 //		'id'               => $prefix . 'header_boxed',
 //		'type'             => 'select',
 //		'show_option_none' => 'Default',
 //        'default'          => '',
 //		'options'          => array(
-//			'no' => __( 'No', 'startup-reloaded' ),
-//			'1'   => __( 'Yes', 'startup-reloaded' )
+//			'no' => __( 'No', 'startup-revolution' ),
+//			'1'   => __( 'Yes', 'startup-revolution' )
 //		)
 //	) );
 //    
 //    $cmb_box->add_field( array(
-//		'name'             => __( 'Parallax', 'startup-reloaded' ),
-//        'desc'             => __( 'Add parallax effect to the background', 'startup-reloaded' ),
+//		'name'             => __( 'Parallax', 'startup-revolution' ),
+//        'desc'             => __( 'Add parallax effect to the background', 'startup-revolution' ),
 //		'id'               => $prefix . 'header_parallax',
 //		'type'             => 'checkbox'
 //	) );

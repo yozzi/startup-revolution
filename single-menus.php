@@ -2,7 +2,7 @@
 /**
  * The template for displaying the menus.
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 get_header(); ?>
@@ -86,7 +86,7 @@ get_header(); ?>
 
                                 <?php
                                     echo '<hr>';
-                                    echo __( 'Season', 'startup-reloaded' ) . ' ' . $all_seasons;
+                                    echo __( 'Season', 'startup-revolution' ) . ' ' . $all_seasons;
                                 ?>
 
                                <?php endif; ?>
@@ -108,25 +108,25 @@ get_header(); ?>
 
                         <?php if ( $inclusions && in_array("cocktail", $inclusions) ) { ?>
                             <div id="cocktail" class="inclusion">
-                                <h3><?php _e( 'Welcome cocktail', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Welcome cocktail', 'startup-revolution' ) ?></h3>
                             </div>
                             <hr />
                         <?php } ?>
 
                         <?php if ( $inclusions && in_array("vin", $inclusions) ) { ?>
                             <div id="wine" class="inclusion">
-                                <h3><?php _e( '&frac12; bottle of wine', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( '&frac12; bottle of wine', 'startup-revolution' ) ?></h3>
                             </div>
                             <hr />
                         <?php } ?>
 
                         <?php if ( !empty($miseenbouches[0]) ) { ?>
                             <div id="miseenbouche" class="course">
-                                <h3><?php _e( 'Mise en bouche', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Mise en bouche', 'startup-revolution' ) ?></h3>
                                 <ul class="list-unstyled">
                                     <?php foreach ( (array) $miseenbouches as $key => $miseenbouche ) { ?>
                                         <li>
-                                            <?php echo esc_html( $miseenbouche['name'] ); if ( isset ($miseenbouche['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-reloaded' ) . '</small>'; } ?>
+                                            <?php echo esc_html( $miseenbouche['name'] ); if ( isset ($miseenbouche['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-revolution' ) . '</small>'; } ?>
                                             <?php if ( array_key_exists('desc', $miseenbouche) && $miseenbouche['desc'] ) { ?><br /><em><?php echo esc_html( $miseenbouche['desc'] ); ?></em><?php } ?>
                                         </li>
                                     <?php } ?> 
@@ -137,11 +137,11 @@ get_header(); ?>
 
                         <?php if ( !empty($entrees[0]) ) { ?>
                             <div id="appetizer" class="course">
-                                <h3><?php _e( 'Appetizer', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Appetizer', 'startup-revolution' ) ?></h3>
                                 <ul class="list-unstyled">
                                     <?php foreach ( (array) $entrees as $key => $entree ) { ?>
                                         <li>
-                                            <?php echo esc_html( $entree['name'] ); if ( isset ($entree['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-reloaded' ) . '</small>'; } ?>
+                                            <?php echo esc_html( $entree['name'] ); if ( isset ($entree['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-revolution' ) . '</small>'; } ?>
                                             <?php if ( array_key_exists('desc', $entrees) && $entrees['desc'] ) { ?><br /><em><?php echo esc_html( $entrees['desc'] ); ?></em><?php } ?>
                                         </li>
                                     <?php } ?>     
@@ -152,11 +152,11 @@ get_header(); ?>
 
                          <?php if ( !empty($preludes[0]) ) { ?>
                             <div id="prelude" class="course">
-                                <h3><?php _e( 'Prelude', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Prelude', 'startup-revolution' ) ?></h3>
                                 <ul class="list-unstyled">
                                     <?php foreach ( (array) $preludes as $key => $prelude ) { ?>
                                         <li>
-                                           <?php echo esc_html( $prelude['name'] ); if ( isset ($prelude['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-reloaded' ) . '</small>'; } ?>
+                                           <?php echo esc_html( $prelude['name'] ); if ( isset ($prelude['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-revolution' ) . '</small>'; } ?>
                                            <?php if ( array_key_exists('desc', $prelude) && $prelude['desc'] ) { ?><br /><em><?php echo esc_html( $prelude['desc'] ); ?></em><?php } ?>
                                         </li>
                                     <?php } ?>     
@@ -167,11 +167,11 @@ get_header(); ?>
 
                         <?php if ( !empty($plats[0]) ) { ?>
                             <div id="main" class="course">
-                                <h3><?php _e( 'Main course', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Main course', 'startup-revolution' ) ?></h3>
                                 <ul class="list-unstyled">
                                     <?php foreach ( (array) $plats as $key => $plat ) { ?>
                                         <li>
-                                            <?php echo esc_html( $plat['name'] ); if ( isset ($plat['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-reloaded' ) . '</small>'; } ?>
+                                            <?php echo esc_html( $plat['name'] ); if ( isset ($plat['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-revolution' ) . '</small>'; } ?>
                                             <?php if ( array_key_exists('desc', $plat) && $plat['desc'] ) { ?><br /><em><?php echo esc_html( $plat['desc'] ); ?></em><?php } ?>
                                         </li>
                                     <?php } ?>     
@@ -182,18 +182,18 @@ get_header(); ?>
 
                         <?php if ( $inclusions && in_array("cheese", $inclusions) ) { ?>
                             <div id="cheese" class="inclusion">
-                                <h3><?php _e( 'Plate of fine cheese of Quebec', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Plate of fine cheese of Quebec', 'startup-revolution' ) ?></h3>
                             </div>
                             <hr />
                         <?php } ?>
 
                         <?php if ( !empty($desserts[0]) ) { ?>
                             <div id="dessert" class="course">
-                                <h3><?php _e( 'Captain\'s dessert', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Captain\'s dessert', 'startup-revolution' ) ?></h3>
                                 <ul class="list-unstyled">
                                     <?php foreach ( (array) $desserts as $key => $dessert ) { ?>
                                         <li>
-                                            <?php echo esc_html( $dessert['name'] ); if ( isset ($dessert['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-reloaded' ) . '</small>'; } ?>
+                                            <?php echo esc_html( $dessert['name'] ); if ( isset ($dessert['extra']) ) { echo ' <small>+' . __( 'extra', 'startup-revolution' ) . '</small>'; } ?>
                                             <?php if ( array_key_exists('desc', $dessert) && $dessert['desc'] ) { ?><br /><em><?php echo esc_html( $dessert['desc'] ); ?></em><?php } ?>
                                         </li>       
                                     <?php } ?>     
@@ -211,14 +211,14 @@ get_header(); ?>
 
                         <?php if ( $inclusions && in_array("digest", $inclusions) ) { ?>
                             <div id="digestive" class="inclusion">
-                                <h3><?php _e( 'Digestive', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Digestive', 'startup-revolution' ) ?></h3>
                             </div>
                             <hr />
                         <?php } ?>
 
                         <?php if ( $inclusions && in_array("coffee", $inclusions) ) { ?>
                             <div id="coffee" class="inclusion">
-                                <h3><?php _e( 'Coffee, tea, herbal tea', 'startup-reloaded' ) ?></h3>
+                                <h3><?php _e( 'Coffee, tea, herbal tea', 'startup-revolution' ) ?></h3>
                             </div>
                             <hr />
                         <?php } ?>
@@ -252,7 +252,7 @@ get_header(); ?>
                                 <?php } ?>
                                 
                                 <div id="notes-legal">
-                                    <small><?php _e( 'Prices subject to change without notice.', 'startup-reloaded' ) ?></small>
+                                    <small><?php _e( 'Prices subject to change without notice.', 'startup-revolution' ) ?></small>
                                 </div>
 
                             </div>

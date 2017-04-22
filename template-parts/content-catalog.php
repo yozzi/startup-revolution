@@ -16,7 +16,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item-thumbnail">  
                             <?php if ( $main_pic ) { $image = $main_pic; }
-                            else { $image = __( 'Image missing!', 'startup-reloaded' ); } ?>
+                            else { $image = __( 'Image missing!', 'startup-revolution' ); } ?>
                             <?php echo $image ?>
                             
                             <div class="catalog-item-title">

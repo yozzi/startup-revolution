@@ -1,8 +1,8 @@
 <?php
 /**
- * StartUp Reloaded functions and definitions
+ * StartUp Revolution functions and definitions
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 //Include this to check if a plugin is activated with is_plugin_active
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -20,10 +20,10 @@ function startup_reloaded_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on StartUp Reloaded, use a find and replace
-	 * to change 'startup-reloaded' to the name of your theme in all the template files
+	 * If you're building a theme based on StartUp Revolution, use a find and replace
+	 * to change 'startup-revolution' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'startup-reloaded', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'startup-revolution', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -45,13 +45,13 @@ function startup_reloaded_setup() {
 
 	// This theme uses wp_nav_menu() in three locations.
 	register_nav_menus( array(
-		'navbar-primary' => esc_html__( 'Navbar Primary', 'startup-reloaded' ),
-        'navbar-primary-non-collapsing' => esc_html__( 'Navbar Primary non-collapsing', 'startup-reloaded' ),
-        'navbar-secondary' => esc_html__( 'Navbar Secondary', 'startup-reloaded' ),
-        'left-panel' => esc_html__( 'Left Panel', 'startup-reloaded' ),
-        'right-panel' => esc_html__( 'Right Panel', 'startup-reloaded' ),
-        'fullscreen-panel' => esc_html__( 'Fullscreen Panel', 'startup-reloaded' ),
-        'navbar-bottom' => esc_html__( 'Navbar Bottom', 'startup-reloaded' ),
+		'navbar-primary' => esc_html__( 'Navbar Primary', 'startup-revolution' ),
+        'navbar-primary-non-collapsing' => esc_html__( 'Navbar Primary non-collapsing', 'startup-revolution' ),
+        'navbar-secondary' => esc_html__( 'Navbar Secondary', 'startup-revolution' ),
+        'left-panel' => esc_html__( 'Left Panel', 'startup-revolution' ),
+        'right-panel' => esc_html__( 'Right Panel', 'startup-revolution' ),
+        'fullscreen-panel' => esc_html__( 'Fullscreen Panel', 'startup-revolution' ),
+        'navbar-bottom' => esc_html__( 'Navbar Bottom', 'startup-revolution' ),
 	) );
 
 	/*

@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 if ( !is_active_sidebar( 'sidebar-1' ) ) {

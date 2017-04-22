@@ -2,7 +2,7 @@
 /**
  * The template for displaying the catalog.
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 get_header(); ?>
@@ -49,7 +49,7 @@ get_header(); ?>
                                     $all_seasons = join( ", ", $season_names );
                                 ?>
 
-                                <?php echo '<h3>' . __( 'Season', 'startup-reloaded' ) . ' ' . $all_seasons . '</h3>' ?>
+                                <?php echo '<h3>' . __( 'Season', 'startup-revolution' ) . ' ' . $all_seasons . '</h3>' ?>
 
                                 <?php endif; ?>
 
@@ -90,7 +90,7 @@ get_header(); ?>
                                         <?php if ( $notes ) { ?>
                                                 <small><?php echo esc_html( $notes ) ?></small>
                                         <?php } ?>
-                                            <small><?php _e( 'Prices subject to change without notice.', 'startup-reloaded' ) ?></small>
+                                            <small><?php _e( 'Prices subject to change without notice.', 'startup-revolution' ) ?></small>
                                     </div>
                                 <?php } ?>
                             </div>
@@ -102,7 +102,7 @@ get_header(); ?>
                                         <?php if ( $notes ) { ?>
                                                 <small><?php echo esc_html( $notes ) ?></small>
                                         <?php } ?>
-                                            <small><?php _e( 'Prices subject to change without notice.', 'startup-reloaded' ) ?></small>
+                                            <small><?php _e( 'Prices subject to change without notice.', 'startup-revolution' ) ?></small>
                                     </div>
                                 <?php } ?>
                             </div>

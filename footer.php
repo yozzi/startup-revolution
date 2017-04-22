@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 require get_template_directory() . '/inc/theme-options.php';
@@ -35,7 +35,7 @@ require get_template_directory() . '/inc/theme-options.php';
                     } ?>
                         
                     <?php if ( current_user_can( 'edit_posts' ) ) { ?>
-                        <a href="<?php echo admin_url() ?>" class="btn btn-custom btn-xs"><?php _e( 'Admin', 'startup-reloaded' ) ?></a>
+                        <a href="<?php echo admin_url() ?>" class="btn btn-custom btn-xs"><?php _e( 'Admin', 'startup-revolution' ) ?></a>
                     <?php } ?> 
                       
                     <?php if ( current_user_can( 'manage_options' ) ) { ?>

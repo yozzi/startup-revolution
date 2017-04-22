@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 ?>
 <div class="col-lg-12">

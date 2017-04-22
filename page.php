@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package StartUp Reloaded
+ * @package StartUp Revolution
  */
 
 get_header();
@@ -29,7 +29,7 @@ require get_template_directory() . '/inc/theme-options.php';
                                 <div class="col-lg-12">
                                     <?php the_content();
                                         wp_link_pages( array(
-                                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'startup-reloaded' ),
+                                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'startup-revolution' ),
                                             'after'  => '</div>',
                                         ) );
                                     ?>

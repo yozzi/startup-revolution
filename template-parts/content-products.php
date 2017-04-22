@@ -11,7 +11,7 @@
 <section id="products"<?php if ( $atts['bg'] ) { ?> style="background:<?php echo $atts['bg'] ?>"<?php } ?>>
     <?php if (is_front_page()) { ?><div class="container"><?php } ?>
         <ul id="filter" class="nav nav-pills">
-            <li><a class="active" href="#" data-group="all"><?php _e( 'All', 'startup-reloaded' ) ?></a></li>
+            <li><a class="active" href="#" data-group="all"><?php _e( 'All', 'startup-revolution' ) ?></a></li>
             <?php 
                 $args = array( 'hide_empty' => 0 );
                 $myterms = get_terms( 'product-category', $args );
@@ -38,16 +38,16 @@
                     <div class="product">
                         <div class="product-thumbnail">  
                             <?php if ( $main_pic ) { $image = $main_pic; }
-                            else { $image = __( 'Image missing!', 'startup-reloaded' ); } ?>                       
+                            else { $image = __( 'Image missing!', 'startup-revolution' ); } ?>                       
                             
                             <?php echo $image ?>
                                                         
-                            <?php if ( $status == 'Available') { ?><span class="label label-success"><?php _e( 'Available', 'startup-reloaded' ) ?></span><?php }
-                            elseif ( $status == 'Sold out soon') { ?><span class="label label-warning"><?php _e( 'Sold out soon', 'startup-reloaded' ) ?></span><?php }
-                            elseif ( $status == 'Back order') { ?><span class="label label-info"><?php _e( 'Back order', 'startup-reloaded' ) ?></span><?php }
-                            elseif ( $status == 'Sold out' ) { ?><span class="label label-danger"><?php _e( 'Sold out', 'startup-reloaded' ) ?></span><?php }
-                            elseif ( $status == 'Unavailable' ) { ?><span class="label label-danger"><?php _e( 'Unavailable', 'startup-reloaded' ) ?></span><?php }
-                            elseif ( $status == 'Sale closed' ) { ?><span class="label label-danger"><?php _e( 'Sale closed', 'startup-reloaded' ) ?></span><?php } ?>                          
+                            <?php if ( $status == 'Available') { ?><span class="label label-success"><?php _e( 'Available', 'startup-revolution' ) ?></span><?php }
+                            elseif ( $status == 'Sold out soon') { ?><span class="label label-warning"><?php _e( 'Sold out soon', 'startup-revolution' ) ?></span><?php }
+                            elseif ( $status == 'Back order') { ?><span class="label label-info"><?php _e( 'Back order', 'startup-revolution' ) ?></span><?php }
+                            elseif ( $status == 'Sold out' ) { ?><span class="label label-danger"><?php _e( 'Sold out', 'startup-revolution' ) ?></span><?php }
+                            elseif ( $status == 'Unavailable' ) { ?><span class="label label-danger"><?php _e( 'Unavailable', 'startup-revolution' ) ?></span><?php }
+                            elseif ( $status == 'Sale closed' ) { ?><span class="label label-danger"><?php _e( 'Sale closed', 'startup-revolution' ) ?></span><?php } ?>                          
                         </div>
                         <div class="product-details">
                             <h4><?php echo $product->post_title; ?></h4>
@@ -59,7 +59,7 @@
                             elseif ( $price != '0, 00' ) { echo '<div class="product-price well well-sm">' . esc_html( $price ) . ' $</div>'; } ?>
 <!--                            <a href="<?php echo esc_url( get_permalink($product->ID) ) ?>" class="btn btn-info btn-lg btn-block" role="button">More information</a>-->
                             
-                            <button type="button" class="btn btn-custom btn-lg btn-block" data-toggle="modal" data-target="#myModal-<?php echo $product->ID; ?>"><?php _e( 'More information', 'startup-reloaded' ) ?></button>
+                            <button type="button" class="btn btn-custom btn-lg btn-block" data-toggle="modal" data-target="#myModal-<?php echo $product->ID; ?>"><?php _e( 'More information', 'startup-revolution' ) ?></button>
                         </div>  
                                 
                     </div>
@@ -108,7 +108,7 @@
                                         </div>
                                     <?php } ?>
                             </div>
-                            <?php } else { _e( 'Image missing!', 'startup-reloaded' ); } ?>
+                            <?php } else { _e( 'Image missing!', 'startup-revolution' ); } ?>
                           
                         <?php if ( $description ) { 
                                 if( $auto_format_off ){
@@ -121,7 +121,7 @@
                       <div class="modal-footer">
                            <?php if ( $special_price != '0, 00' ) { echo '<div class="product-price well well-sm"><small><strike>' . esc_html( $price ) . ' $</strike></small> <span class="text-danger">' . esc_html( $special_price ) . ' $</span></div>'; }
                             elseif ( $price != '0, 00' ) { echo '<div class="product-price well well-sm">' . esc_html( $price ) . ' $</div>'; } ?>
-                        <a href="<?php if ( $url ) { echo $url; } ?>" class="btn btn-custom btn-lg btn-block" role="button"><?php _e( 'Buy it now!', 'startup-reloaded' ) ?></a>
+                        <a href="<?php if ( $url ) { echo $url; } ?>" class="btn btn-custom btn-lg btn-block" role="button"><?php _e( 'Buy it now!', 'startup-revolution' ) ?></a>
                       </div>
                     </div>
                   </div>

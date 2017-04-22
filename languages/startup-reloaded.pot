@@ -2109,7 +2109,7 @@ msgid "Reset Password"
 msgstr ""
 
 #. Name of the theme
-msgid "StartUp Reloaded"
+msgid "StartUp Revolution"
 msgstr ""
 
 #. Theme URI of the theme
