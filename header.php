@@ -25,9 +25,7 @@ if ($navbar_position == 'navbar-fixed-header'){$body_position = 'fixed-header';}
 if ($navbar_position == 'navbar-fixed-bottom'){$body_position = 'fixed-bottom';};
 if ($navbar_position == 'navbar-normal'){$body_position = NULL;};
 
-if ( $responsive ) { //Fonction à compléter mais c'est un bon début ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php } ?>
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -39,14 +37,13 @@ if ( $responsive ) { //Fonction à compléter mais c'est un bon début ?>
 <?php get_template_part( 'template-parts/scripts', 'header' ) ?>
     
 </head>
-<?php if ( $responsive != 1 ) { $unresponsive = 'ur'; } else { $unresponsive = ''; } ?>
-<body <?php body_class( array( $unresponsive, $body_transparent, $body_position, $body_logo));?>>
+<body <?php body_class( array( $body_transparent, $body_position, $body_logo));?>>
     <?php if( $left_panel_on || $right_panel_on ){ ?>
         <div class="panel-page-container">
             <?php } ?>
-            <div class="page-container<?php if( $page_transition ) { ?> animsition<?php } ?>"<?php if( $page_transition ) { ?> data-animsition-in="<?php echo $page_transition_in ?>" data-animsition-out="<?php echo $page_transition_out ?>"<?php } ?>>   
+            <div class="page-container">   
                 
-        <div id="page" class="hfeed site<?php if ( $boxed ){ echo ' container'; } ?>" <?php if ( $boxed ){ echo ' style="padding:0"'; } ?>>
+        <div id="page" class="hfeed site">
             
             <?php if( $left_panel_on ){ get_template_part( 'template-parts/panel', 'left' ); } ?>
             <?php if( $right_panel_on ){ get_template_part( 'template-parts/panel', 'right' ); } ?>

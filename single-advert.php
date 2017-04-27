@@ -19,7 +19,7 @@ require get_template_directory() . '/inc/theme-options.php';
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                <?php //if( !$boxed ) { ?><div class="container"><?php //} ?>
+                <div class="container">
                     <div class="row">
 
                         <!-- Blog Post Content Column -->
@@ -129,7 +129,7 @@ require get_template_directory() . '/inc/theme-options.php';
                         </div>
 
                     </div>
-                <?php //if( !$boxed ) { ?></div><?php //} ?>
+                </div>
 
             </article><!-- #post-## -->
 

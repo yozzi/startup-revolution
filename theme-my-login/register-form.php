@@ -8,7 +8,6 @@ require get_template_directory() . '/inc/theme-options.php';
 
 ?>
 <div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
-    <?php if ( $boxed ){ ?><div class="container"><?php } ?>
         <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                 <?php $template->the_action_template_message( 'register' ); ?>
@@ -38,5 +37,4 @@ require get_template_directory() . '/inc/theme-options.php';
                 </p>
             </div>
         </div>
-    <?php if ( $boxed ){ ?></div><?php } ?>
 </div>

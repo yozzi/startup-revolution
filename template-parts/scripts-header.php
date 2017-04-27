@@ -137,29 +137,6 @@ require get_template_directory() . '/inc/theme-options.php';
     </script>
 <?php } ?>
 
-<?php if( $page_transition ){ ?>
-    <script type="text/javascript">
-        jQuery( document ).ready(function() {
-            jQuery(".animsition").animsition({
-                inDuration            :    1000,
-                outDuration           :    800,
-                //linkElement           :   '.animsition-link',
-                linkElement   :   'a:not([target="_blank"]):not([href^="#"]):not([class="no-animsition"]):not([class^="mm-prev"])',
-                loading               :    true,
-                loadingParentElement  :   'body', //animsition wrapper element
-                loadingClass          :   'animsition-loading',
-                unSupportCss          : [ 'animation-duration',
-                                          '-webkit-animation-duration',
-                                          '-o-animation-duration'
-                                        ],
-                overlay               :   false,
-                overlayClass          :   'animsition-overlay-slide',
-                overlayParentElement  :   'body'
-            });
-        });
-    </script>
-<?php } ?>
-
 <!--[if lt IE 9]>
     <script src="<?php echo get_stylesheet_directory_uri() ?>/lib/polyfills/selectivizr.js"></script>
     <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>

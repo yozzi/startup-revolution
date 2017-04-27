@@ -46,20 +46,6 @@ function optionsframework_options() {
 		'type' => 'info'
 	);
     
-	$options[] = array(
-		'desc' => __( 'Responsive', 'startup-revolution' ),
-		'id' => 'general-responsive',
-		'std' => '1',
-		'type' => 'checkbox'
-	);
-    
-	$options[] = array(
-		'desc' => __( 'Boxed', 'startup-revolution' ),
-		'id' => 'general-boxed',
-		'std' => '0',
-		'type' => 'checkbox'
-	);
-    
 	$home_page_type = array(
 		'default' => __( 'Default', 'startup-revolution' ),
 		'login' => __( 'Login', 'startup-revolution' ),
@@ -75,53 +61,6 @@ function optionsframework_options() {
 	);
     
 	$options[] = array(
-		'name' => __( 'Page transitions', 'startup-revolution' ),
-        'desc' => __( 'Activate', 'startup-revolution' ),
-		'id' => 'page-transition',
-		'std' => '1',
-		'type' => 'checkbox'
-	);
-    
-	$general_page_transitions = array(
-		'fade-in' => __( 'Fade in', 'startup-revolution' ),
-		'fade-out' => __( 'Fade out', 'startup-revolution' ),
-        'fade-in-up' => __( 'Fade in up', 'startup-revolution' ),
-		'fade-out-up' => __( 'Fade out up', 'startup-revolution' ),
-        'fade-in-down' => __( 'Fade in down', 'startup-revolution' ),
-		'fade-out-down' => __( 'Fade out down', 'startup-revolution' ),
-        'fade-in-left' => __( 'Fade in left', 'startup-revolution' ),
-		'fade-out-left' => __( 'Fade out left', 'startup-revolution' ),
-        'fade-in-right' => __( 'Fade in right', 'startup-revolution' ),
-		'fade-out-right' => __( 'Fade out right', 'startup-revolution' ),
-        'rotate-in' => __( 'Rotate in', 'startup-revolution' ),
-		'rotate-out' => __( 'Rotate out', 'startup-revolution' ),
-        'flip-in-x' => __( 'Flip in X', 'startup-revolution' ),
-		'flip-out-x' => __( 'Flip out X', 'startup-revolution' ),
-        'flip-in-y' => __( 'Flip in Y', 'startup-revolution' ),
-		'flip-out-y' => __( 'Flip out Y', 'startup-revolution' ),
-        'zoom-in' => __( 'Zoom in', 'startup-revolution' ),
-		'zoom-out' => __( 'Zoom out', 'startup-revolution' ),
-	);
-    
-	$options[] = array(
-		'desc' => __( 'Transition in', 'startup-revolution' ),
-		'id' => 'page-transition-in',
-		'std' => 'fade-in',
-		'type' => 'select',
-		'class' => 'mini', //mini, tiny, small
-		'options' => $general_page_transitions
-	);
-    
-    $options[] = array(
-		'desc' => __( 'Transition out', 'startup-revolution' ),
-		'id' => 'page-transition-out',
-		'std' => 'fade-out',
-		'type' => 'select',
-		'class' => 'mini', //mini, tiny, small
-		'options' => $general_page_transitions
-	);
-    
-	$options[] = array(
 		'name' => __( 'Options', 'startup-revolution' ),
 		'type' => 'info'
 	);
@@ -129,13 +68,6 @@ function optionsframework_options() {
 	$options[] = array(
 		'desc' => __( 'Back to top button', 'startup-revolution' ),
 		'id' => 'general-back-to-top',
-		'std' => '1',
-		'type' => 'checkbox'
-	);
-    
-    $options[] = array(
-		'desc' => __( 'Activate FastClick', 'startup-revolution' ),
-		'id' => 'general-fastclick',
 		'std' => '1',
 		'type' => 'checkbox'
 	);

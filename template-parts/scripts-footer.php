@@ -1,15 +1,5 @@
 <?php require get_template_directory() . '/inc/theme-options.php'; ?>
 
-<?php if ( $fastclick ) { ?>
-<script type="text/javascript">
-    //Fastclick
-    
-    jQuery(function () {
-        FastClick.attach(document.body);
-    });
-</script>
-<?php } ?>
-
 <?php if ( $smoothscroll ) {
     if ( $navbar_position == 'navbar-fixed-top' || $navbar_position == 'navbar-fixed-slider' || $navbar_position == 'navbar-fixed-header' ) {
             $scroll_offset = 50;   

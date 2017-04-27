@@ -25,7 +25,7 @@
     if (!is_front_page() && !$this_post_header_visible ){?>
         <header class="entry-header <?php echo $this_post_header_position ?>"<?php if ( !$this_post_header_boxed_width ) { ?> style="<?php if ( $this_post_header_color ){ echo 'color:' . $this_post_header_color . ';'; }; if ( $this_post_header_background && $this_post_header_parallax == '' ){  echo 'background: url(' . $this_post_header_background . '); background-size:cover; background-position: center ' . $this_post_header_background_position . ';';} elseif ( $this_post_header_background_color && $this_post_header_parallax == '' ) { echo 'background: ' . $this_post_header_background_color . ';';} ?>" <?php if ( $this_post_header_parallax ){ echo 'data-parallax="scroll" data-image-src="' . $this_post_header_background[0] . '"'; } ?><?php } ?>>
             <?php if ( $this_post_header_boxed_width ) { ?>
-                <?php if(!$boxed) { ?><div class="container"><?php } ?>
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div<?php if ( $this_post_header_boxed_width ) { ?> style="<?php if ( $this_post_header_color ){ echo 'color:' . $this_post_header_color . ';'; }; if ( $this_post_header_background && $this_post_header_parallax == '' ){  echo 'background: url(' . $this_post_header_background . '); background-size:cover; background-position: center ' . $this_post_header_background_position . ';';} elseif ( $this_post_header_background_color && $this_post_header_parallax == '' ) { echo 'background: ' . $this_post_header_background_color . ';';} ?>" <?php if ( $this_post_header_parallax ){ echo 'data-parallax="scroll" data-image-src="' . $this_post_header_background[0] . '"'; } ?><?php } ?>>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                     </div>
-                <?php if(!$boxed) { ?></div><?php } ?>
+                </div>
             <?php } ?>
         </header><!-- .entry-header -->
     <?php } else { ?>

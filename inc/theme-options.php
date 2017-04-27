@@ -2,16 +2,10 @@
 // General
     $logo                               = of_get_option( 'general-logo' );
     $header                             = of_get_option( 'general-header' );
-    $responsive                         = of_get_option( 'general-responsive' );
-    $boxed                              = of_get_option( 'general-boxed' );
     $front_page                         = of_get_option( 'front-page' );
     $search                             = of_get_option( 'navbar-search' );
-    $page_transition                    = of_get_option( 'page-transition' );
-    $page_transition_in                 = of_get_option( 'page-transition-in' );
-    $page_transition_out                = of_get_option( 'page-transition-out' );
     $back_to_top                        = of_get_option( 'general-back-to-top' );
     $ytplayer                           = of_get_option( 'general-ytplayer' );
-    $fastclick                          = of_get_option( 'general-fastclick' );
     $smoothscroll                       = of_get_option( 'general-smoothscroll' );
     $ga                                 = of_get_option( 'general-ga' );
 // Style

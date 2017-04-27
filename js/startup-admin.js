@@ -1,6 +1,4 @@
 jQuery( document ).ready(function() {
-    jQuery('#page-transition-in').select2();
-    jQuery('#page-transition-out').select2();
     jQuery('#slider-arrows-hover').select2();
     jQuery('#_startup_cpt_services_icon').select2();
     jQuery('#_startup_cpt_milestones_icon').select2();

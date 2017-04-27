@@ -27,7 +27,7 @@ require get_template_directory() . '/inc/theme-options.php';
 ?>
 
 <div id="comments" class="comments-area">
-    <?php if(!$boxed) { ?><div class="container"><?php } ?>
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
 
@@ -89,5 +89,5 @@ require get_template_directory() . '/inc/theme-options.php';
 	<?php comment_form(); ?>
             </div>
         </div>
-    <?php if(!$boxed) { ?></div><?php } ?>
+   </div>
 </div><!-- #comments -->
