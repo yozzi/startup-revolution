@@ -41,11 +41,6 @@ function optionsframework_options() {
 		'options' => $options_pages
 	);
     
-	$options[] = array(
-		'name' => __( 'Layout', 'startup-revolution' ),
-		'type' => 'info'
-	);
-    
 	$home_page_type = array(
 		'default' => __( 'Default', 'startup-revolution' ),
 		'login' => __( 'Login', 'startup-revolution' ),
@@ -75,13 +70,6 @@ function optionsframework_options() {
 	$options[] = array(
 		'desc' => __( 'Activate YTPlayer', 'startup-revolution' ),
 		'id' => 'general-ytplayer',
-		'std' => '0',
-		'type' => 'checkbox'
-	);
-    
-    $options[] = array(
-		'desc' => __( 'Activate SmoothScroll', 'startup-revolution' ),
-		'id' => 'general-smoothscroll',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
@@ -151,36 +139,6 @@ function optionsframework_options() {
         "type" => "select",
         "options" => $alt_stylesheets );
     
-	$background_defaults = array(
-		'color' => '',
-		'image' => '',
-		'repeat' => 'repeat',
-		'position' => 'top center',
-		'attachment'=>'scroll' );
-    
-    $options[] = array(
-		'name' =>  __( 'Background', 'startup-revolution' ),
-		'desc' => __( 'Change the background CSS.', 'startup-revolution' ),
-		'id' => 'style-background',
-		'std' => $background_defaults,
-		'type' => 'background'
-	);
-    
-	$options[] = array(
-		'name' => __( '', 'startup-revolution' ),
-        'desc' => __( 'Cover', 'startup-revolution' ),
-		'id' => 'style-cover',
-		'std' => '0',
-		'type' => 'checkbox'
-	);
-    
-    $options[] = array(
-        'name' => __( 'Page background', 'startup-revolution' ),
-		'id' => 'style-page',
-		'std' => '',
-		'type' => 'color'
-	);
-    
     $options[] = array(
 		'name' => __( 'Custom button', 'startup-revolution' ),
         'desc' => __( 'Corner radius in px', 'startup-revolution' ),
@@ -222,13 +180,6 @@ function optionsframework_options() {
 		'name' => __( 'Pages & posts header', 'startup-revolution' ),
         'desc' => __( 'Hide the header. Or not. Overrides individual page setting if ckecked.', 'startup-revolution' ),
 		'id' => 'page-header-hidden',
-		'std' => '0',
-		'type' => 'checkbox'
-	);
-    
-    $options[] = array(
-        'desc' => __( 'Boxed width.', 'startup-revolution' ),
-		'id' => 'page-header-boxed-width',
 		'std' => '0',
 		'type' => 'checkbox'
 	);
@@ -302,23 +253,10 @@ function optionsframework_options() {
 		'name' => __( 'Navigation', 'startup-revolution' ),
 		'type' => 'heading'
 	);
-    
-	$options[] = array(
-		'name' => __( 'Navbar', 'startup-revolution' ),
-        'desc' => __( 'Activate', 'startup-revolution' ),
-		'id' => 'navbar-on',
-		'std' => '1',
-		'type' => 'checkbox'
-	);
 
 	$navbar_position = array(
-        'navbar-normal'       => __( 'Normal', 'startup-revolution' ),
-		'navbar-static-top'   => __( 'Static top', 'startup-revolution' ),
 		'navbar-fixed-top'    => __( 'Fixed top', 'startup-revolution' ),
-        'navbar-fixed-slider' => __( 'Fixed under slider', 'startup-revolution' ),
-        'navbar-static-header' => __( 'Static under header', 'startup-revolution' ),
         'navbar-fixed-header' => __( 'Fixed under header', 'startup-revolution' ),
-		'navbar-fixed-bottom' => __( 'Fixed bottom', 'startup-revolution' )
 	);
     
 	$options[] = array(
@@ -392,14 +330,6 @@ function optionsframework_options() {
 		'desc' => __( 'Inverse style', 'startup-revolution' ),
 		'id' => 'navbar-inverse',
 		'std' => '1',
-		'type' => 'checkbox'
-	);
-    
-    $options[] = array(
-        'name' => __( 'Search', 'startup-revolution' ),
-		'desc' => __( 'Activate search form. (experimental)', 'startup-revolution' ),
-		'id' => 'navbar-search',
-		'std' => '0',
 		'type' => 'checkbox'
 	);
     

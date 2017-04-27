@@ -3,23 +3,17 @@
     $logo                               = of_get_option( 'general-logo' );
     $header                             = of_get_option( 'general-header' );
     $front_page                         = of_get_option( 'front-page' );
-    $search                             = of_get_option( 'navbar-search' );
     $back_to_top                        = of_get_option( 'general-back-to-top' );
     $ytplayer                           = of_get_option( 'general-ytplayer' );
-    $smoothscroll                       = of_get_option( 'general-smoothscroll' );
     $ga                                 = of_get_option( 'general-ga' );
 // Style
     $user_style                         = of_get_option( 'auto_stylesheet' );
-    $background                         = of_get_option( 'style-background' );
-    $cover                              = of_get_option( 'style-cover' );
-    $page_background                    = of_get_option( 'style-page' );
     $page_header_visible                = of_get_option( 'page-header-hidden' );
     $page_header_background_color       = of_get_option( 'page-header-background-color' );
     $page_header_color                  = of_get_option( 'page-header-text-color' );
     $page_header_padding                = of_get_option( 'page-header-padding' );
     $page_header_position               = of_get_option( 'page-header-position' );
     $page_header_boxed                  = of_get_option( 'page-header-boxed' );
-    $page_header_boxed_width            = of_get_option( 'page-header-boxed-width' );
     $footer                             = of_get_option( 'general-footer' );
     $bt_radius                          = of_get_option( 'button-radius' );
     $bt_background                      = of_get_option( 'button-background' );
@@ -29,7 +23,6 @@
     $custom_css                         = of_get_option( 'custom-css' );
     $footer_color                       = of_get_option( 'footer-color' );
 // Navigation
-    $navbar_on                          = of_get_option( 'navbar-on' );
     $navbar_position                    = of_get_option( 'navbar-position' );
     $navbar_transparent                 = of_get_option( 'navbar-transparent' );
     $navbar_logo_position               = of_get_option( 'navbar-logo-position' );

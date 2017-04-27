@@ -21,7 +21,6 @@
         get_template_part( 'template-parts/slider', 'home' );
     }
 ?>
-<?php if( $navbar_on && $navbar_position == 'navbar-fixed-slider' ){ get_template_part( 'template-parts/navbar', 'primary' ); } ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main zone" role="main">

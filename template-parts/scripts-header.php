@@ -15,7 +15,7 @@ require get_template_directory() . '/inc/theme-options.php';
     </script>
 <?php } ?>
 
-<?php if ($navbar_on && $navbar_position == 'navbar-fixed-top'){ ?>
+<?php if ($navbar_position == 'navbar-fixed-top'){ ?>
     <script type="text/javascript">
         //jQuery to collapse the navbar on scroll
         jQuery(window).scroll(function () {

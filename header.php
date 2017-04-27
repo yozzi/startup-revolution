@@ -17,13 +17,9 @@ if ($logo){$body_logo = 'logo-on';} else {$body_logo = 'logo-off';};
 if ($navbar_transparent){$body_transparent = 'transparent-on';} else {$body_transparent = 'transparent-off';};
 
 $body_position = NULL;
-if ($navbar_position == 'navbar-static-top'){$body_position = 'static-top';};
 if ($navbar_position == 'navbar-fixed-top'){$body_position = 'fixed-top';};
-if ($navbar_position == 'navbar-fixed-slider'){$body_position = 'fixed-slider';};
-if ($navbar_position == 'navbar-static-header'){$body_position = 'static-header';};
 if ($navbar_position == 'navbar-fixed-header'){$body_position = 'fixed-header';};
-if ($navbar_position == 'navbar-fixed-bottom'){$body_position = 'fixed-bottom';};
-if ($navbar_position == 'navbar-normal'){$body_position = NULL;};
+?>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -54,14 +50,9 @@ if ($navbar_position == 'navbar-normal'){$body_position = NULL;};
 
             <?php if(
                         (
-                            $navbar_on
-                            && $navbar_position != 'navbar-fixed-slider'
-                            && $navbar_position != 'navbar-static-header'
-                            && $navbar_position != 'navbar-fixed-header'
+                            $navbar_position != 'navbar-fixed-header'
                         ) || (
-                            $navbar_on
-                            && !is_front_page()
-                            && $navbar_position != 'navbar-static-header'
+                            !is_front_page()
                             && $navbar_position != 'navbar-fixed-header'
                         )
                     ){ get_template_part( 'template-parts/navbar', 'primary' ); } ?>
@@ -71,4 +62,4 @@ if ($navbar_position == 'navbar-normal'){$body_position = NULL;};
                 
                 <?php if ( $header ){ ?><header id="head" role="banner"><?php echo do_shortcode(get_post($header)->post_content) ?></header><?php } ?>
                 
-                <?php if( $navbar_on && ($navbar_position == 'navbar-fixed-header' || $navbar_position == 'navbar-static-header' ) ){ get_template_part( 'template-parts/navbar', 'primary' ); } ?>
+                <?php if ( $navbar_position == 'navbar-fixed-header' ){ get_template_part( 'template-parts/navbar', 'primary' ); } ?>
