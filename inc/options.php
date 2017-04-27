@@ -849,27 +849,6 @@ function optionsframework_options() {
 		'class' => 'mini'
 	);
     }
-
-    //*****************************************************************************
-    //*****************************************************************************
-    //
-    // Advanced
-    //
-    //*****************************************************************************
-    //*****************************************************************************
-    
-	$options[] = array(
-		'name' => __( 'Advanced', 'startup-revolution' ),
-		'type' => 'heading'
-	);
-    
-	$options[] = array(
-		'name' => __( 'Mise en forme automatique', 'startup-revolution' ),
-		'desc' => __( 'Cocher pour <strong>desactiver</strong> la mise en forme automatique de l\'editeur WordPress. Evite les br, p, et suppression de lignes vides, etc...', 'startup-revolution' ),
-		'id' => 'auto-format-off',
-		'std' => '0',
-		'type' => 'checkbox'
-	);
     
 	return $options;
 }

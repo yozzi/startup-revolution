@@ -93,5 +93,3 @@
     $team_slider                        = of_get_option( 'team-slider' );
     $team_order                         = of_get_option( 'team-order' );
     $team_number                        = of_get_option( 'team-number' );
-// Advanced
-    $auto_format_off                    = of_get_option( 'auto-format-off' );

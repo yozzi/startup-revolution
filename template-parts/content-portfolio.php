@@ -108,11 +108,7 @@
 
                                             <div class="modal-description">  
                                             <?php if ( $description ) { 
-                                                    if( $auto_format_off == 1 ){
-                                                        echo '<p>' . $description . '</p>';
-                                                    } else {
-                                                        echo '<p>' . wpautop( $description ) . '</p>';
-                                                    }
+                                                     echo '<p>' . wpautop( $description ) . '</p>';
                                                 } ?>
 
                                             </div>
@@ -185,11 +181,7 @@
 
                                             <div class="modal-description">  
                                             <?php if ( $description ) { 
-                                                    if( $auto_format_off == 1 ){
-                                                        echo '<p>' . $description . '</p>';
-                                                    } else {
-                                                        echo '<p>' . wpautop( $description ) . '</p>';
-                                                    }
+                                                    echo '<p>' . wpautop( $description ) . '</p>';
                                                 } ?>
 
                                             </div>

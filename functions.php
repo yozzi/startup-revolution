@@ -198,13 +198,6 @@ function bwp_template_redirect() {
 }
 add_action('template_redirect', 'bwp_template_redirect');
 
-/**
- * Désactiver les br automatiques de l'éditeur et autres
- */
-if( $auto_format_off ){
-    remove_filter('the_content', 'wpautop');
-}
-
  /* 
  * The CSS file selected in the options panel 'stylesheet' option
  * is loaded on the theme front end

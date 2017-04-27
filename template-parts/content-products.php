@@ -111,11 +111,7 @@
                             <?php } else { _e( 'Image missing!', 'startup-revolution' ); } ?>
                           
                         <?php if ( $description ) { 
-                                if( $auto_format_off ){
-                                    echo '<p>' . $description . '</p>';
-                                } else {
-                                    echo '<p>' . wpautop( $description ) . '</p>';
-                                }
+                                echo '<p>' . wpautop( $description ) . '</p>';
                             } ?>
                       </div>
                       <div class="modal-footer">
