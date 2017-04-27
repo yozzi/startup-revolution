@@ -1,6 +1,5 @@
 <?php
 // General
-    $str                                = of_get_option( 'general-serial' );
     $logo                               = of_get_option( 'general-logo' );
     $header                             = of_get_option( 'general-header' );
     $responsive                         = of_get_option( 'general-responsive' );

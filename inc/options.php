@@ -19,13 +19,6 @@ function optionsframework_options() {
 	);
     
     $options[] = array(
-		'name' => __( 'StartUp serial number', 'startup-revolution' ),
-		'id' => 'general-serial',
-		'std' => '',
-		'type' => 'text'
-	);
-    
-    $options[] = array(
 		'name' => __( 'Image Logo', 'startup-revolution' ),
 		'id' => 'general-logo',
 		'type' => 'upload'
