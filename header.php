@@ -48,14 +48,7 @@ if ($navbar_position == 'navbar-fixed-header'){$body_position = 'fixed-header';}
                 <?php esc_html_e( 'Skip to content', 'startup-revolution' ); ?>
             </a>
 
-            <?php if(
-                        (
-                            $navbar_position != 'navbar-fixed-header'
-                        ) || (
-                            !is_front_page()
-                            && $navbar_position != 'navbar-fixed-header'
-                        )
-                    ){ get_template_part( 'template-parts/navbar', 'primary' ); } ?>
+            <?php if( $navbar_position != 'navbar-fixed-header' ){ get_template_part( 'template-parts/navbar', 'primary' ); } ?>
         
 
             <div id="content" class="site-content">

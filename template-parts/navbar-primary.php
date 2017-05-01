@@ -15,14 +15,14 @@ require get_template_directory() . '/inc/theme-options.php';
         <div class="container">
             <?php if ( has_nav_menu( 'navbar-primary' ) ) { ?>
                     
-                        <button type="button" class="navbar-toggle <?php if ($navbar_hamburger_position == 'navbar-left') {echo 'left-toggle';} else {echo 'right-toggle';}?>" data-toggle="collapse" data-target=".navbar-sur-collapse">
-                            <span class="sr-only"><?php _e( 'Toggle navigation', 'startup-reloaded' ) ?></span>
-                            <span class="icon-bar top-bar"></span>
-                            <span class="icon-bar middle-bar"></span>
-                            <span class="icon-bar bottom-bar"></span>
-                        </button>
+                <button type="button" class="navbar-toggle <?php if ($navbar_hamburger_position == 'navbar-left') {echo 'left-toggle';} else {echo 'right-toggle';}?>" data-toggle="collapse" data-target=".navbar-sur-collapse">
+                    <span class="sr-only"><?php _e( 'Toggle navigation', 'startup-reloaded' ) ?></span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
                     
-                <?php } ?>
+            <?php } ?>
             <?php if ( $navbar_logo_position ) { ?>
                 <div class="navbar-header <?php echo $navbar_logo_position; ?>">
                     <a class="navbar-brand" href="<?php echo esc_url( home_url() ) ?>">
