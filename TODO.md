@@ -11,5 +11,3 @@ reparer fullscreen panel ou le virer carrément
 
 vérifier scripts et includes dans header et footer
 intégrer blog de APS
-
-CMB2 comme plugin uniquement avec warning a l'activation du theme et du plugin startup

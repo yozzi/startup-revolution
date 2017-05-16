@@ -139,23 +139,6 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/lib/wp_bootstrap_navwalker.php';
 
 /**
- * Charger CMB2.
- */
-if ( !defined( 'CMB2_LOADED') ) {
-    require get_template_directory() . '/lib/CMB2/init.php';
-}
-
-/**
- * Charger CMB2 Gmaps.
- */
-require get_template_directory() . '/lib/cmb_field_map/cmb-field-map.php';
-
-/**
- * Charger CMB2 Slider.
- */
-require get_template_directory() . '/lib/cmb2-field-slider/cmb2_field_slider.php';
-
-/**
  * Charger les Metaboxes.
  */
 require get_template_directory() . '/inc/metaboxes.php';
@@ -210,38 +193,6 @@ function options_stylesheets_alt_style()   {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'options_stylesheets_alt_style' );
-
-//Fonction pour récupérer les info d'un attachement à partir de son id, utilisé avec CMB2
-function wp_get_attachment( $attachment_id ) {
-
-    $attachment = get_post( $attachment_id );
-    return array(
-        'alt' => get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ),
-        'caption' => $attachment->post_excerpt,
-        'description' => $attachment->post_content,
-        'href' => get_permalink( $attachment->ID ),
-        'src' => $attachment->guid,
-        'title' => $attachment->post_title
-    );
-}
-
-// Fonction pour récupérer les info d'un attachement à partir de son url, utilisé avec CMB2, particulièrement dans les options de plugins
-//
-// Utilisation:
-// store the image ID in a var
-// $image_id = wp_get_image_id($image_url);
-//
-// retrieve the thumbnail size of our image:
-// $image_thumb = wp_get_attachment_image_src($image_id, 'thumbnail');
-//
-// display the image:
-// echo $image_thumb[0];
-
-function wp_get_image_id($image_url) {
-	global $wpdb;
-	$attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $image_url )); 
-        return $attachment[0]; 
-}
 
 //Adverts
 if (is_plugin_active('wpadverts/wpadverts.php')){
