@@ -532,7 +532,7 @@ function optionsframework_options() {
     $options[] = array(
 		'desc' => __( 'Height in px. "100%" for full viewport height', 'startup-revolution' ),
 		'id' => 'slider-height',
-		'std' => '400',
+		'std' => '100%',
 		'type' => 'text',
         'class' => 'mini'
 	);
