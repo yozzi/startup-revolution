@@ -7,7 +7,7 @@
     $blog = get_posts( $args );   
 ?>
 
-<section id="blog"<?php if ( $atts['bg'] ) { ?> style="background:<?php echo $atts['bg'] ?>"<?php } ?>>
+<section id="blog">
     <?php if (is_front_page()) { ?><div class="container"><?php } ?>
         <?php if ( $blog_style == 'shuffle' && $blog_filter == 'buttons' ) { ?>
             <ul id="filter" class="nav nav-pills">
